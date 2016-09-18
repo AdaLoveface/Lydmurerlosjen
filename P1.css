@@ -4,6 +4,8 @@ body {
   margin: 0 auto;
   background-color: rgb(255,246,242);
   font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
+  font-family: 'Times New Roman', serif;
   }
 
  figure {
@@ -29,6 +31,8 @@ body {
 
  h1, h2 {
    font-family: 'Raleway', sans-serif;
+   font-family: 'Helvetica', sans-serif;
+   font-family: 'Arial', sans-serif;
    font-weight: thick;
  }
 
