@@ -2,12 +2,18 @@ html{
   background-color: #fff7e6;
 }
 body {
+  border-radius: 20px;
   width: 780px;
   margin: 0 auto;
   background-color: #FFFAF0;
   font-family: 'Playfair Display', Georgia, Times, serif;
   margin: white;
   }
+
+header {
+  padding-top: 3%;
+}
+
 header h2, header h1 {
   padding-left: 50px
 }
@@ -18,7 +24,8 @@ figure {
   margin-bottom:20px;
  }
 img {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 section {
 
