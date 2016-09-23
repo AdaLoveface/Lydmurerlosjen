@@ -4,103 +4,90 @@ html{
 
 body {
   width: 780px;
-  border-radius: 20px;
-  background-color: #FFFAF0;
-  font-family: 'Playfair Display', Georgia, Times, serif;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  position: relative;
+
+  margin: 30px auto 30px;
   padding-bottom: 30px;
 
-  position: relative;
+  border-radius: 20px;
+  background-color: #FFFAF0;
   border: 0.5px solid #cccccc;
-
+  font-family: 'Playfair Display', Georgia, Times, serif;
 }
 
-hr{
-margin-left: 50px;
-margin-right: 50px;
-margin-bottom: 60px;
-
-}
 
 header {
-  padding-top: 10px;
   height: 100px;
-  margin-bottom: 10px;
-  margin-top: 40px;
-  margin-left: 42px;
-  margin-right: 42px;
+  padding-top: 10px;
+  margin: 40px 90px 40px 90px;
+  border-width: 1px;
 }
 
-header h2, header h1 {
-  padding-left: 50px;
-  border-bottom: 0px;
+header h2{
+  font-size: 12px;
 }
 
 img {
+  width: 200px;
+  height: 200px;
   border-radius: 100px;
-  box-shadow: 5px 5px 5px #888888;
-  position: absolute;
-  right: 80px;
-  top: 210px;
-  transition: transform 2s, border-radius 2s;
 
+  position: absolute;
+  right: -190px;
+  top: 0px;
+
+  /* for fun */
+  box-shadow: 5px 5px 5px #888888;
+  transition: transform 2s, border-radius 2s;
 }
 
-img:hover{
+img:hover{  /* for fun */
   transform: scale(1.4);
   border-radius: 0;
 }
 
 section {
- border-radius: 5px;
  padding-left: 50px;
  padding-right: 50px;
- margin-bottom:60px;
- margin-left: 42px;
- margin-right: 42px;
+ margin: 0 40px 60px 40px;
  }
 
  h1, h2 {
    font-family: 'Raleway', Helvetica, Arial, sans-serif;
    font-weight: thick;
+   position: relative;
  }
 
 h2 {
   font-size: 13px;
-  border-bottom: 0.5px solid #bbbbbb;
   padding-bottom: 3px;
+  border-bottom: 0.5px solid #bbbbbb;
 }
 
 h1 span {
   font-size: 12px;
   font-style: italic;
-  padding-left: 165px
-}
 
-h2 span {
- font-size: 12px;
- font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 section > h2 {
   font-size: 19px;
 }
 
-.title{
+h3{
     font-style: black;
+    font-weight: bold;
     display: block;
     margin-bottom: -10px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #client {
   display: inline-block;
   width: 50%;
   margin-bottom: 50px;
-}
-
-#client h2{
-  display: inline-block;
+  position: relative;
 }
