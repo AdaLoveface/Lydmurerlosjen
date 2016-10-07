@@ -1,9 +1,20 @@
-Body width: 80% 
+Body width: 80%
 Fonts:
   - Poiret One for navbar and headings
   - Open Sans for paragraphs and everything else
 
 Color scheme:
+Each section will have its own color, so that when you are on the home page it
+is a shade of green, and then past projects is red. This will also be reflected
+in the navbar, so when you hover over a specific section in the navbar, it will
+be the same color as the background on that section. So the colors will be
+  - Home: #3c948b
+  - About: #3c948b
+  - Events: #c43100
+  - Past Projects: #ffe15b
+  - Present Projects: #f7328e
+  - Contact: #3263f7
+
   - Navbar/border: #313131
   - Shadows: #cecece
   - Text 1: #313131
