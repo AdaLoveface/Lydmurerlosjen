@@ -1,0 +1,22 @@
+Fonts:
+  - Poiret One for navbar and headings
+  - Open Sans for paragraphs and everything else
+
+Color scheme:
+  - Navbar/border: #313131
+  - Shadow: #cecece
+  - Text 1: #313131
+  - Text 2: #efefef
+  - Backgrounds 1: White
+  - Backgrounds 2: #3c948b
+  - Footer color: #bac2c6
+Banner:
+  - We are thinking of having a very basic banner, that has a menu button that
+  shows the navbar and the Lydmurerlosjen logo
+Navbar position:
+  - Top left corner menu, moves into view when you hover over it
+
+
+Footer:
+  - Google Map
+  - Social media
