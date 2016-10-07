@@ -1,22 +1,31 @@
+Body width: 80% 
 Fonts:
   - Poiret One for navbar and headings
   - Open Sans for paragraphs and everything else
 
 Color scheme:
   - Navbar/border: #313131
-  - Shadow: #cecece
+  - Shadows: #cecece
   - Text 1: #313131
   - Text 2: #efefef
   - Backgrounds 1: White
   - Backgrounds 2: #3c948b
   - Footer color: #bac2c6
+  - Links: blue
+  - Links when hovered: #bc441c
 Banner:
-  - We are thinking of having a very basic banner, that has a menu button that
-  shows the navbar and the Lydmurerlosjen logo
+  - We are considering having a very basic banner, that has a menu button that
+  shows the navbar and the Lydmurerlosjen logo. Either this banner will be in white
+  with no border, or the border will be very thin with a shadow that is created
+  when you browse down the page.
 Navbar position:
   - Top left corner menu, moves into view when you hover over it
-
+Background image:
+  - We will use a background image provided by the client that is shown at the top
+  of the page when you enter, and as you scroll down to the next section of the
+  page, the image is either shaded or tinted so as to change its visibility and
+  tell the user that the focus is now elsewhere.
 
 Footer:
   - Google Map
-  - Social media
+  - Social media (Facebook, Instagram)
