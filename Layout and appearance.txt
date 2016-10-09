@@ -10,10 +10,10 @@ in the navbar, so when you hover over a specific section in the navbar, it will
 be the same color as the background on that section. So the colors will be
   - Home: #3c948b
   - About: #3c948b
-  - Events: #c43100
-  - Present Projects: #ffe15b
-  - Past Projects: #f7328e
-  - Contact: #3263f7
+  - Events: #46af69
+  - Present Projects: #f7d332
+  - Past Projects: #ffe15b
+  - Contact: #cc6349
 
   - Navbar/border: #313131
   - Shadows: #cecece
@@ -21,7 +21,7 @@ be the same color as the background on that section. So the colors will be
   - Text 2: #efefef
   - Backgrounds 1: White
   - Backgrounds 2: #3c948b
-  - Footer color: #bac2c6
+  - Footer color: #313131
   - Links: blue
   - Links when hovered: #bc441c
 Banner:
