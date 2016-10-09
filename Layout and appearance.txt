@@ -11,8 +11,8 @@ be the same color as the background on that section. So the colors will be
   - Home: #3c948b
   - About: #3c948b
   - Events: #c43100
-  - Past Projects: #ffe15b
-  - Present Projects: #f7328e
+  - Present Projects: #ffe15b
+  - Past Projects: #f7328e
   - Contact: #3263f7
 
   - Navbar/border: #313131
