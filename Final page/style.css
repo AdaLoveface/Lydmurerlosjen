@@ -118,6 +118,33 @@ header {
   text-align: center;
 }
 
+#events{
+  background: #313131;
+  height: 50px;
+
+  font-family: 'Poiret One';
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+#projects{
+  background: #313131;
+  height: 50px;
+
+  font-family: 'Poiret One';
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+#contact{
+  background: #313131;
+  height: 50px;
+
+  font-family: 'Poiret One';
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
 body {
   margin: 0;
   margin-top: 50px;
