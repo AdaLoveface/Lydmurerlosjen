@@ -5,7 +5,7 @@
 
 .sideBar {
   border-right: 1.5px solid #777;
-  background-color: #353535;
+  background-color: #313131;
   color: #ddd;
 
   position: fixed;
@@ -49,10 +49,21 @@ a:link, a:visited, a:hover, a:active{
 }
 
 /* Highlights background when mouse hover */
-.sideBar > ul > li:hover {
+.sideBar > ul > #homeSB:hover{
   background-color: #404040;
 }
-
+.sideBar > ul > #aboutSB:hover{
+  background-color: #3c948b;
+}
+.sideBar > ul > #eventsSB:hover {
+  background-color: #46af69;
+}
+.sideBar > ul > #projectsSB:hover {
+  background-color: #f7d332;
+}
+.sideBar > ul > #contactSB:hover {
+  background-color: #cc6349;
+}
 /*****************************************
   Side-bar toggle-button
 *****************************************/
@@ -110,7 +121,7 @@ footer {
 
 /*****************************************
 Background
-/*****************************************/    
+/*****************************************/
 /*****************************************
   misc
 *****************************************/
