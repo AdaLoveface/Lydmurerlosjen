@@ -27,7 +27,7 @@ footer {
 .header{
   background: #313131;
   height: 80px;
-
+  
   margin-top: 25px;
   font-family: 'Poiret One';
   font-size: 30px;
@@ -53,11 +53,6 @@ body {
 .backgroundImg {
   width:100%;
 }
-
-
-
-
-
 
 /*****************************************
   Side-bar
