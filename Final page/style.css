@@ -116,9 +116,13 @@ Background
 *****************************************/
 
 .text {
-  margin-top: 50px;
-  margin-left: 50%;
+  margin-top: auto;
+  margin-left: auto;
   color: white;
+  font-family: 'Open Sans';
+  font-size: 30px;
+  text-align: center;
+  font-weight: 'light:200';
 }
 
 /* Jump-headers */
