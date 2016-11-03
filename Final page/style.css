@@ -3,7 +3,7 @@
   Side-bar
 /*******************************************/
 
-.side-bar {
+.sideBar {
   border-right: 1.5px solid #777;
   background-color: #353535;
   color: #ddd;
@@ -21,7 +21,7 @@
 }
 
 /* Styling of (ul) list */
-.side-bar > ul {
+.sideBar > ul {
   list-style: none;
 
   padding: 0;
@@ -29,7 +29,7 @@
 }
 
 /* Styling of list elements */
-.side-bar > ul > li{
+.sideBar > ul > li{
   width: 200px;
   height: 65px;
 
@@ -49,14 +49,15 @@ a:link, a:visited, a:hover, a:active{
 }
 
 /* Highlights background when mouse hover */
-.side-bar > ul > li:hover {
+.sideBar > ul > li:hover {
   background-color: #404040;
 }
 
 /*****************************************
   Side-bar toggle-button
 *****************************************/
-.side-bar-toggle {
+
+.sideBarToggle {
   color: #eeeeee;
   font-size: 60px;
   line-height: 0;
@@ -67,7 +68,7 @@ a:link, a:visited, a:hover, a:active{
   left: 10px;
 }
 
-.side-bar-toggle:hover + .side-bar, .side-bar:hover{
+.sideBarToggle:hover + .sideBar, .sideBar:hover{
   display: block;
 
   animation-name: fadeIn;
@@ -99,16 +100,18 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+
 }
 
 /*****************************************
   misc
 *****************************************/
 
-#about{
+.header{
   background: #313131;
-  height: 50px;
+  height: 80px;
 
+  margin-top: 25px;
   font-family: 'Poiret One';
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
