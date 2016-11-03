@@ -1,4 +1,4 @@
-Body width: 80%
+ Body width: 80%
 Fonts:
   - Poiret One for navbar and headings
   - Open Sans for paragraphs and everything else
