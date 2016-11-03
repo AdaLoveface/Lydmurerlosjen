@@ -1,0 +1,127 @@
+
+/*****************************************
+  Side-bar
+/*******************************************/
+
+.side-bar {
+  border-right: 1.5px solid #777;
+  background-color: #353535;
+  color: #ddd;
+
+  position: fixed;
+  top: 50px;
+  left: 0px;
+
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+
+  text-align: center;
+  display: none;
+}
+
+/* Styling of (ul) list */
+.side-bar > ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling of list elements */
+.side-bar > ul > li{
+  width: 200px;
+  height: 65px;
+
+  line-height: 65px;
+  font-size: 22pt;
+  font-family: 'Poiret One';
+  text-transform: uppercase;
+
+  color: rgba(256, 256, 256, 0.6);
+  cursor: pointer;
+}
+
+/* Removes default url-styling */
+a:link, a:visited, a:hover, a:active{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+/* Highlights background when mouse hover */
+.side-bar > ul > li:hover {
+  background-color: #404040;
+}
+
+/*****************************************
+  Side-bar toggle-button
+*****************************************/
+.side-bar-toggle {
+  color: #eeeeee;
+  font-size: 60px;
+  line-height: 0;
+  cursor: pointer;
+
+  position: fixed;
+  top: 20px;
+  left: 10px;
+}
+
+.side-bar-toggle:hover + .side-bar, .side-bar:hover{
+  display: block;
+
+  animation-name: fadeIn;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateX(-150px) rotateY(-90deg);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+/*****************************************
+  header
+*****************************************/
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #313131;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*****************************************
+  misc
+*****************************************/
+
+#about{
+  background: #313131;
+  height: 50px;
+
+  font-family: 'Poiret One';
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  margin-top: 50px;
+  background: #313131;
+
+}
+
+.backgroundImg {
+  width:100%;
+}
