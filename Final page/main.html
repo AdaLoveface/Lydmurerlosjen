@@ -1,58 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
   <head>
     <meta charset="utf-8">
-    <title>Lydmurerlosjen</title>
+    <title>LYDMURERLOSJEN</title>
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="body" onscroll="changeHeader()" onload="changeHeader()">
 
     <header>
+
       <a class="sideBarToggle">≣</a>
       <nav class="sideBar">
         <ul>
           <li id="homeSB">Home</li>
-          <li id="aboutSB"><a href="#about">About</a></li>
-          <li id="eventsSB"><a href="#events">Events</a></li>
-          <li id="projectsSB"><a href="#projects">Projects</a></li>
-          <li id="contactSB"><a href="#contact">Contact</a></li>
+          <li id="aboutSB">About</li>
+          <li id="eventsSB">Events</li>
+          <li id="projectsSB">Projects</li>
+          <li id="contactSB">Contact</li>
         </ul>
+        <div>
+          <a href="[Twitterlink]"><img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" class="socialMedia"/></a>
+          <a href="[Facebooklink]"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMedia"/></a>
+          <a href="[Instagramlink]"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMedia"/></a>
+        </div>
       </nav>
+      <div id="headerTitle"></div>
     </header>
 
-
-    <section class="section home">
-      <div class="background">
-          <img class="backgroundImg" src="PB-LOGO.png" alt="img/png">
+    <!-- HOME -->
+    <section id="home">
+      <div id="background">
+        <div id="filter"></div>
+        <img id="homePhoto" src="PB-LOGO.png" alt="img/png">
       </div>
     </section>
 
-    <section class="section about">
-      <div id="about" class="header">ABOUT</div>
-      <div class="background">
-          <img class="backgroundImg" src="PB-LOGO.png" alt="img/png">
-      </div>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="headers">ABOUT</div>
+      <p>
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+      </p>
+
     </section>
 
-    <section class="section events">
-      <div id="events" class="header">EVENTS</div>
-      <div class="background">
-          <img class="backgroundImg" src="PB-LOGO.png" alt="img/png">
-      </div>
+    <!-- <img class="headerImg" src="COVER-1.png" alt="img/png" /> -->
+
+    <!-- EVENTS -->
+    <section id="events">
+      <div class="headers">EVENTS</div>
+      <p>
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+      </p>
     </section>
 
-    <section class="section projects">
-      <div id="projects" class="header">PROJECTS</div>
-      <div class="background">
-          <img class="backgroundImg" src="PB-LOGO.png" alt="img/png">
-      </div>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="headers">PROJECTS</div>
+      <p>
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+      </p>
     </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="headers">CONTACT</div>
+      <p>
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla
+      </p>
+
+    </section>
+
   </body>
 
-  <footer>
-    <div id="contact"></div>
+
+  <footer id="footer">
+
+    <div id="address">
+      <p>
+        contactinfo<br>
+        contactinfo<br>
+        contactinfo<br>
+        contactinfo<br>
+      </p>
+
+    </div>
 
     <div id="map"></div>
     <script>
@@ -68,13 +123,9 @@
     }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
   </footer>
 
-    <script type="text/javascript" src="script.js"></script>
-
-
-
-
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
