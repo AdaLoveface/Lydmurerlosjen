@@ -135,31 +135,7 @@ footer {
   box-shadow: 0px -3px 10px #555;
 }
 
-<<<<<<< HEAD
-/*****************************************
-Background
-/*****************************************/
-/*****************************************
-  misc
-*****************************************/
-
-.text {
-  margin-top: auto;
-  margin-left: auto;
-  color: white;
-  font-family: 'Open Sans';
-  font-size: 30px;
-  text-align: center;
-  font-weight: 'light:200';
-}
-
-/* Jump-headers */
-.header{
-  background: #313131;
-  height: 80px;
-=======
 #address {
->>>>>>> origin/master
 
   font-family: 'Poiret One';
   font-size: 30px;
