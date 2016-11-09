@@ -6,6 +6,11 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script type="text/javascript" src="googleMaps.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
   </head>
 
   <body id="body" onscroll="changeHeader()" onload="changeHeader()">
@@ -96,6 +101,7 @@
 
   </body>
 
+<<<<<<< Updated upstream
 
   <footer id="footer">
 
@@ -109,23 +115,27 @@
 
     </div>
 
+  <section class="section contact">
+  <div id="contact" class="header">CONTACT</div>
+  <div class="background">
+      <img class="backgroundImg" src="PB-LOGO.png" alt="img/png">
+  </div>
+</section>
+
+
+</body>
+  <footer>
     <div id="map"></div>
     <script>
-    function myMap() {
-      var myCenter = new google.maps.LatLng(63.434458, 10.404103);
-      var mapCanvas = document.getElementById("map");
-      var mapOptions = {
-        center: myCenter,
-        zoom: 15}
-      var map = new google.maps.Map(mapCanvas, mapOptions);
-      var marker = new google.maps.Marker({position: myCenter});
-      marker.setMap(map);
-    }
+    myMap()
     </script>
+
 
   </footer>
 
   <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
   <script type="text/javascript" src="script.js"></script>
+
+  </footer>
   </body>
 </html>
