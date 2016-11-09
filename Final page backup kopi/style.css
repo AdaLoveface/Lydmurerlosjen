@@ -137,20 +137,21 @@ footer {
 
 #address {
 
-  font-family: 'Poiret One';
-  font-size: 30px;
+  font-family: 'Open Sans';
+  font-size: 10pt;
   color: rgba(255, 255, 255, 0.8);
-  margin-left: 10%;
-
+  position: relative;
+  left: 20%;
+  top: 20%
 }
 
 #map{
-  width:500px;
+  width:400px;
   max-width: 40%;
   height:300px;
 
   position: absolute;
-  left: 55%;
+  /*left: 5%;*/
   right: 5%;
   top: 50px;
   bottom: 70px;
@@ -205,7 +206,7 @@ Text
 /*****************************************/
 
 section > p {
-  font-family:'Poiret One';
+  font-family:'Open Sans';
   color: #222;
   margin: 100px 15% 200px 15%;
 }
