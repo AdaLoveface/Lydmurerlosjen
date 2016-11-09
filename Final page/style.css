@@ -42,8 +42,8 @@
 
 .socialMediaSB {
   width: 35px;
-  height: 35px;
-  margin-top: 50px;
+  height: auto;
+  /*margin-top: 50px;*/
 }
 
 /* Removes default link-styling */
