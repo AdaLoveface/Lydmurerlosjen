@@ -1,11 +1,9 @@
-
 /*****************************************
   Side-bar
 /*******************************************/
 
 .sideBar {
-  border-right: 1.5px solid #777;
-  background-color: #353535;
+  box-shadow: 2px 0px 5px #333;
   color: #ddd;
 
   position: fixed;
@@ -42,23 +40,40 @@
   cursor: pointer;
 }
 
-/* Removes default url-styling */
+.socialMediaSB {
+  width: 35px;
+  height: 35px;
+  margin-top: 50px;
+}
+
+/* Removes default link-styling */
 a:link, a:visited, a:hover, a:active{
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
 
 /* Highlights background when mouse hover */
-.sideBar > ul > li:hover {
-  background-color: #404040;
+.sideBar > ul > #homeSB:hover{
+  background-color: rgba(60,148,139,0.3);
 }
-
+.sideBar > ul > #aboutSB:hover{
+  background-color: rgba(60,148,139,0.8);
+}
+.sideBar > ul > #eventsSB:hover {
+  background-color: rgba(70,175,105,0.8);
+}
+.sideBar > ul > #projectsSB:hover {
+  background-color: rgba(247,211,50, 0.9);
+}
+.sideBar > ul > #contactSB:hover {
+  background-color: #cc6349;
+}
 /*****************************************
   Side-bar toggle-button
 *****************************************/
 
 .sideBarToggle {
-  color: #eeeeee;
+  color: #eee;
   font-size: 60px;
   line-height: 0;
   cursor: pointer;
@@ -70,21 +85,18 @@ a:link, a:visited, a:hover, a:active{
 
 .sideBarToggle:hover + .sideBar, .sideBar:hover{
   display: block;
-
-  animation-name: fadeIn;
-  animation-duration: 400ms;
-  animation-timing-function: ease-out;
+  animation: animateSideBar 600ms ease-in-out;
 }
 
-@keyframes fadeIn {
+@keyframes animateSideBar {
   0%{
     opacity: 0;
-    transform: translateX(-150px) rotateY(-90deg);
+    transform: translateX(-250px) ;
   }
 
   100%{
     opacity: 1;
-    transform: translateX(0) rotateY(0);
+    transform: translateX(0) ;
   }
 }
 
@@ -92,22 +104,38 @@ a:link, a:visited, a:hover, a:active{
   header & footer
 *****************************************/
 
+ footer, .sideBar {
+  background-color: #252525;
+}
+
 header {
   width: 100%;
   height: 50px;
-  background-color: #313131;
 
   position: fixed;
   top: 0;
   left: 0;
+
+  box-shadow: 0px 3px 15px #414141;
+  z-index: 10;
+}
+
+#headerTitle {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-family: 'Poiret One';
+  font-size: 30px;
+  margin-top: 5px;
 }
 
 footer {
   width: 100%;
-  height: 300px;
-  background-color: #313131;
+  height: 500px;
+  position: relative;
+  box-shadow: 0px -3px 10px #555;
 }
 
+<<<<<<< HEAD
 /*****************************************
 Background
 /*****************************************/
@@ -129,31 +157,116 @@ Background
 .header{
   background: #313131;
   height: 80px;
+=======
+#address {
+>>>>>>> origin/master
 
-  margin-top: 25px;
   font-family: 'Poiret One';
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-}
-
-#headerTitle {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
+  margin-left: 10%;
 
 }
+
+#map{
+  width:500px;
+  max-width: 40%;
+  height:300px;
+
+  position: absolute;
+  left: 55%;
+  right: 5%;
+  top: 50px;
+  bottom: 70px;
+
+  box-shadow: 5px 5px 5px #222;
+
+
+}
+
+/*****************************************
+  misc
+*****************************************/
 
 body {
   margin: 0;
   margin-top: 50px;
-  background: #313131;
+
+  background: #fff;
 
 }
 
-.backgroundImg {
-  width:100%;
+/*****************************************
+Background
+/*****************************************/
+
+#background{
+  width: 100vw;
+  height: 635px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 1px 8px #666;
+
+}
+
+#homePhoto, #filter{
+  width: 1300px;
+  height: auto;
+
+  /* holder bildet midtstilt ved resizing */
+  margin-top: -80px;
+  margin-left: -650px;
+  padding-left: 50vw;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+/*****************************************
+Text
+/*****************************************/
+
+section > p {
+  font-family:'Poiret One';
+  color: #222;
+  margin: 100px 15% 200px 15%;
+}
+
+.headers {
+  font-size: 50px;
+  font-family: 'Poiret One';
+  margin-top: 200px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*****************************************
+Contacts
+/*****************************************/
+
+.person{
+  position: relative;
+}
+
+.person > span{
+  position: absolute;
+  top: 65px;
+  left: 150px;
+}
+
+.contactImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px #666;
+  margin-left:20px;
+  margin-top: 30px;
+}
+
+#contact {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  margin-bottom: 300px;
 }
