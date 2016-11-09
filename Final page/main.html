@@ -10,7 +10,7 @@
 
   <body id="body" onscroll="changeHeader()" onload="changeHeader()">
 
-    <header>
+    <header id="headerBar">
 
       <a class="sideBarToggle">≣</a>
       <nav class="sideBar">
@@ -22,12 +22,12 @@
           <li id="contactSB">Contact</li>
         </ul>
         <div>
-          <a href="[Twitterlink]"><img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" class="socialMedia"/></a>
-          <a href="[Facebooklink]"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMedia"/></a>
-          <a href="[Instagramlink]"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMedia"/></a>
+          <a href="[Twitterlink]"><img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" class="socialMediaSB"/></a>
+          <a href="[Facebooklink]"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMediaSB"/></a>
+          <a href="[Instagramlink]"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMediaSB"/></a>
         </div>
       </nav>
-      <div id="headerTitle"></div>
+      <div id="headerTitle">LYDMURERLOSJEN</div>
     </header>
 
     <!-- HOME -->
@@ -78,54 +78,73 @@
         bla bla bla bla bla bla bla bla bla bla bla
         bla bla bla bla bla bla bla
       </p>
+
+      <div class="slideshow">
+        <div class="">
+
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
       <div class="headers">CONTACT</div>
-      <p>
-        bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla
-      </p>
 
+      <div id="contactPeople">
+
+        <div id="leftSide">
+          <div class="person">
+            <img class="contactImg" src="contact_people/KdKrx0oC.jpg" alt="img/jpg" />
+            <span>  Harold
+            </span>
+          </div>
+
+          <div class="person">
+            <img class="contactImg" src="contact_people/3.jpg" alt="img/jpg" />
+            <span>  Leif <br>
+            </span>
+          </div>
+        </div>
+
+        <div id="rightSide">
+          <div class="person">
+            <img class="contactImg" src="contact_people/ada.jpg" alt="img/jpg" />
+            <span>  Ada <br>
+            </span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-  </body>
+    <footer id="footer">
 
+      <div id="address">
+        <p>
+          address<br>
+          address<br>
+          address<br>
 
-  <footer id="footer">
+        </p>
+      </div>
 
-    <div id="address">
-      <p>
-        contactinfo<br>
-        contactinfo<br>
-        contactinfo<br>
-        contactinfo<br>
-      </p>
+      <div id="map"></div>
+      <script>
+      function myMap() {
+        var myCenter = new google.maps.LatLng(63.434458, 10.404103);
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {
+          center: myCenter,
+          zoom: 15}
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position: myCenter});
+        marker.setMap(map);
+      }
+      </script>
 
-    </div>
+    </footer>
 
-    <div id="map"></div>
-    <script>
-    function myMap() {
-      var myCenter = new google.maps.LatLng(63.434458, 10.404103);
-      var mapCanvas = document.getElementById("map");
-      var mapOptions = {
-        center: myCenter,
-        zoom: 15}
-      var map = new google.maps.Map(mapCanvas, mapOptions);
-      var marker = new google.maps.Marker({position: myCenter});
-      marker.setMap(map);
-    }
-    </script>
-
-  </footer>
-
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-  <script type="text/javascript" src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

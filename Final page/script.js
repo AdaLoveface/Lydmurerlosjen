@@ -3,27 +3,32 @@
 var sections = [
   {
     "name": "LYDMURERLOSJEN",
+    "color": "#252525",
     "id":   "home",
     "idSB": "homeSB",
     "position": 0
   },
   {
     "name": "ABOUT",
+    "color": "rgb(60,148,139)",
     "id":   "about",
     "idSB": "aboutSB"
   },
   {
     "name": "EVENTS",
+    "color": "rgb(70,175,105)",
     "id":   "events",
     "idSB": "eventsSB"
   },
   {
     "name": "PROJECTS",
+    "color": "rgb(247,211,50)",
     "id":   "projects",
     "idSB": "projectsSB"
   },
   {
     "name": "CONTACT",
+    "color": "#cc6349",
     "id":   "contact",
     "idSB": "contactSB"
   },
@@ -42,7 +47,6 @@ function updatePosition() {
     sections[i].position = document.getElementById(sections[i].id).offsetTop;
   }
 };
-
 document.getElementById('body').addEventListener("resize",updatePosition());
 
 // --------------------------------------------
@@ -54,19 +58,19 @@ function scrollTo(toPos, animationTime) {
   reference = document.body;
 
   var difference = toPos - reference.scrollTop;
-  var ticks = difference / animationTime * 2;
+  var ticks = difference / animationTime * 10;
 
   setTimeout(function() {
     reference.scrollTop = reference.scrollTop + ticks;
     if (reference.scrollTop === toPos) return;
-    scrollTo(toPos, animationTime - 2);
-  }, 2);
+    scrollTo(toPos, animationTime - 10);
+  }, 10);
 }
 
 // Adding eventlisteners to the anchor-links
 // was planning to do this in a loop, but
 // couldn't make it work
-var animationTime = 300;
+var animationTime = 400;
 document.getElementById("homeSB").addEventListener('click',
 function() {
   scrollTo(sections[0].position, animationTime);
@@ -92,14 +96,16 @@ function() {
 // --------------------------------------------
 
 function changeHeader(){
-  var title = document.getElementById('headerTitle');
+  //var title = document.getElementById('headerTitle');
   var pixelsScrolled = document.getElementById('body').scrollTop;
 
-  console.log(pixelsScrolled)
+  console.log(pixelsScrolled);
 
   for (var i = 0; i < sections.length-1; i++) {
     if (pixelsScrolled < sections[i+1].position) {
-      title.innerHTML = sections[i].name;
+      //title.innerHTML = sections[i].name;
+      document.getElementById('headerBar').style.transition = "all 600ms ease-in-out";
+      document.getElementById('headerBar').style.backgroundColor = sections[i].color;
       return;
     }
   }

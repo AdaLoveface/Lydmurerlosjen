@@ -40,6 +40,12 @@
   cursor: pointer;
 }
 
+.socialMediaSB {
+  width: 35px;
+  height: 35px;
+  margin-top: 50px;
+}
+
 /* Removes default link-styling */
 a:link, a:visited, a:hover, a:active{
   color: rgba(255, 255, 255, 0.7);
@@ -79,21 +85,18 @@ a:link, a:visited, a:hover, a:active{
 
 .sideBarToggle:hover + .sideBar, .sideBar:hover{
   display: block;
-
-  animation-name: animateSideBar;
-  animation-duration: 400ms;
-  animation-timing-function: ease-out;
+  animation: animateSideBar 600ms ease-in-out;
 }
 
 @keyframes animateSideBar {
   0%{
     opacity: 0;
-    transform: translateX(-50px) rotateY(-90deg);
+    transform: translateX(-250px) ;
   }
 
   100%{
     opacity: 1;
-    transform: translateX(0) rotateY(0);
+    transform: translateX(0) ;
   }
 }
 
@@ -101,7 +104,7 @@ a:link, a:visited, a:hover, a:active{
   header & footer
 *****************************************/
 
-header, footer, .sideBar {
+ footer, .sideBar {
   background-color: #252525;
 }
 
@@ -137,7 +140,7 @@ footer {
   font-family: 'Poiret One';
   font-size: 30px;
   color: rgba(255, 255, 255, 0.8);
-
+  margin-left: 10%;
 
 }
 
@@ -164,6 +167,7 @@ footer {
 body {
   margin: 0;
   margin-top: 50px;
+
   background: #fff;
 
 }
@@ -172,13 +176,12 @@ body {
 Background
 /*****************************************/
 
-
 #background{
   width: 100vw;
   height: 635px;
   overflow: hidden;
   position: relative;
-  box-shadow: 2px 1px 5px #666;
+  box-shadow: 0px 1px 8px #666;
 
 }
 
@@ -201,7 +204,6 @@ Background
 Text
 /*****************************************/
 
-
 section > p {
   font-family:'Poiret One';
   color: #222;
@@ -211,15 +213,36 @@ section > p {
 .headers {
   font-size: 50px;
   font-family: 'Poiret One';
-  padding-top: 200px;
+  margin-top: 200px;
   margin-bottom: 30px;
   text-align: center;
-
 }
 
+/*****************************************
+Contacts
+/*****************************************/
 
-.socialMedia {
-  width: 35px;
-  height: 35px;
-  margin-top: 50px;
+.person{
+  position: relative;
+}
+
+.person > span{
+  position: absolute;
+  top: 65px;
+  left: 150px;
+}
+
+.contactImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px #666;
+  margin-left:20px;
+  margin-top: 30px;
+}
+
+#contact {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  margin-bottom: 300px;
 }
