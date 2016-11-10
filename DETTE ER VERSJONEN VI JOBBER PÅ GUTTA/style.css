@@ -132,12 +132,14 @@ footer {
 
   font-family: 'Open Sans';
   font-size: 10pt;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   position: relative;
   left: 40%;
   top: 20%
 }
-
+#actualAddress{
+  color: rgba(255, 255, 255, 0.3);
+}
 #map{
   width:400px;
   max-width: 40%;
