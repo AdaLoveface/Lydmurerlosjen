@@ -114,6 +114,13 @@ header {
   z-index: 10;
 }
 
+#headerBar {
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
 #headerTitle {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -154,30 +161,42 @@ footer {
   box-shadow: 5px 5px 5px #222;
 }
 
-.socialMediaSB {
+#socialMedia {
+  position: relative;
+}
+
+.socialMedia {
   width: 64px;
   height: auto;
   position: relative;
   left: 20%;
   /*margin-top: 50px;*/
 }
+
 #Facebook {
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 #SC {
-  border-radius: 50%;
+  border-radius: 100%;
+  position: absolute;
+  left: 5%;
 }
+
 /*****************************************
-  misc
-*****************************************/
+misc
+/*****************************************/
 
 body {
   margin: 0;
   margin-top: 50px;
 
   background: #fff;
+}
 
+html {
+  overflow-x: hidden;
 }
 
 /*****************************************
@@ -189,7 +208,7 @@ Background
   height: 635px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 1px 8px #666;
+  box-shadow: 0px 1px 5px #666;
 
 }
 
@@ -255,4 +274,191 @@ Contacts
   font-family: 'Open Sans';
   font-size: 20px;
   margin-bottom: 300px;
+}
+
+/*****************************************
+Slideshow
+/*****************************************/
+
+#slides {
+    position: relative;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slideOutRight{
+  animation: slideOutRight 800ms ease-out;
+}
+
+.slideOutLeft{
+  animation: slideOutLeft 800ms ease-out;
+}
+
+.fromRight {
+  animation: nextSlide 800ms ease-out;
+}
+
+.fromLeft {
+  animation: prevSlide 800ms ease-out;
+}
+
+@keyframes slideOutRight {
+  0%{
+    opacity: 1;
+    transform: translateX(0) ;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(100%) ;
+  }
+}
+
+@keyframes slideOutLeft {
+  0%{
+    opacity: 1;
+    transform: translateX(0) ;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-100%) ;
+  }
+}
+
+@keyframes nextSlide {
+  0%{
+    opacity: 0;
+    transform: translateX(100%) ;
+  }
+  80%{
+    opacity: 0.4;
+    transform: translateX(-.8%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0) ;
+  }
+}
+
+@keyframes prevSlide {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%) ;
+  }
+  80%{
+    opacity: 0.4;
+    transform: translateX(-.8%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0) ;
+  }
+}
+
+/*****************************************
+slideshow style
+/*****************************************/
+
+.slide {
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #fff;
+    color: rgba(0,0,0,0.7);
+}
+
+.slideImg {
+  height: 400px;
+}
+
+.container {
+  position:relative;
+  margin-left:50px;
+  margin-right:20px;
+}
+
+.controls{
+
+  border: none;
+  outline: none;
+  background: none;
+
+  font-size: 50px;
+  height: 80px;
+
+  color: rgba(0,0,0,0.4);
+
+}
+
+#next{
+  position: absolute;
+  right: 0px;
+  top: 40%;
+  z-index: 10;
+
+  padding-left: 20px;
+  padding-right: 5px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+#previous {
+  position: absolute;
+  left: -38px;
+  top: 40%;
+  z-index: 10;
+
+  padding-left: 10px;
+  padding-right: 8px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.controls:hover {
+  background-color: rgba(0,0,0,0.6);
+  color: rgba(256,256,256,0.8);
+}
+
+
+/*****************************************
+slideshow dots
+/*****************************************/
+#dots {
+  position: absolute;
+  left: 45%;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #777;
 }

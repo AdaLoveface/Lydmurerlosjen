@@ -104,7 +104,7 @@ function changeHeader(){
   for (var i = 0; i < sections.length-1; i++) {
     if (pixelsScrolled < sections[i+1].position) {
       //title.innerHTML = sections[i].name;
-      document.getElementById('headerBar').style.transition = "all 600ms ease-in-out";
+      // document.getElementById('headerBar').style.transition = "all 600ms ease-in-out";
       document.getElementById('headerBar').style.backgroundColor = sections[i].color;
       return;
     }
