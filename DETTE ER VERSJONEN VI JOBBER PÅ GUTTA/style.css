@@ -135,18 +135,29 @@ footer {
   height: 360px;
 }
 
+.footerTitle{
+  color: rgba(255, 255, 255, 0.3);
+}
 #address {
-
   font-family: 'Open Sans';
   font-size: 10pt;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
-  left: 40%;
-  top: 20%
+  display: inline-block;
+  float: left;
+  margin-left: 36%;
+  top:60px;
 }
-#actualAddress{
-  color: rgba(255, 255, 255, 0.3);
+#utviklingsteam {
+  font-family: 'Open Sans';
+  font-size: 10pt;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  top: 60px;
 }
+
 #map{
   width:400px;
   max-width: 40%;
@@ -160,29 +171,47 @@ footer {
 
   box-shadow: 5px 5px 5px #222;
 }
-
-#socialMedia {
-  position: relative;
+#socialMedia{
+  position: absolute;
+  top:20%;
 }
-
 .socialMedia {
   width: 64px;
   height: auto;
   position: relative;
-  left: 20%;
-  /*margin-top: 50px;*/
+  left: 50%;
+}
+.socialMedia:hover{
+  filter:brightness(80%);
 }
 
 #Facebook {
   padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 50px;
 }
 
 #SC {
   border-radius: 100%;
   position: absolute;
-  left: 5%;
+  left: 30%;
 }
+@media only screen
+and (max-width: 1145px){
+  #map{
+    top:360px;
+    max-width: 100%;
+    width: 96%;
+    left:2%;
+  }
+  footer{
+    height: 720px;
+  }
+  /*#utviklingsteam{
+    right:300px;
+  }*/
+}
+
+
 
 /*****************************************
 misc
