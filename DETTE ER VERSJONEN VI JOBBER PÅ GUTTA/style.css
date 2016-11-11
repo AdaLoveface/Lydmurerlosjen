@@ -138,6 +138,12 @@ footer {
 .footerTitle{
   color: rgba(255, 255, 255, 0.3);
 }
+.textWrapper{
+  position: absolute;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+}
 #address {
   font-family: 'Open Sans';
   font-size: 10pt;
@@ -146,7 +152,7 @@ footer {
   display: inline-block;
   float: left;
   margin-left: 36%;
-  top:60px;
+  top:0px;
 }
 #utviklingsteam {
   font-family: 'Open Sans';
@@ -155,7 +161,7 @@ footer {
   position: relative;
   display: inline-block;
   margin-left: 10px;
-  top: 60px;
+  top: 0px;
 }
 
 #map{
@@ -187,7 +193,7 @@ footer {
 
 #Facebook {
   padding-right: 10px;
-  padding-left: 50px;
+  /*padding-left: 50px;*/
 }
 
 #SC {
@@ -195,6 +201,7 @@ footer {
   position: absolute;
   left: 30%;
 }
+
 @media only screen
 and (max-width: 1145px){
   #map{
@@ -206,9 +213,27 @@ and (max-width: 1145px){
   footer{
     height: 720px;
   }
-  /*#utviklingsteam{
-    right:300px;
-  }*/
+  #socialMedia{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    top: 10%;
+  }
+  #SC{
+
+  }
+  #textWrapper{
+    top: 220px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+  }
+  #address{
+    /*top: 220px;*/
+  }
+  #utviklingsteam{
+    /*top: 220px;*/
+  }
 }
 
 
