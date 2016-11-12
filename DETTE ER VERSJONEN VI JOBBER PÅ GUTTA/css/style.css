@@ -172,10 +172,10 @@ footer {
   font-family: 'Open Sans';
   font-size: 10pt;
   color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  display: inline-block;
+  position: relative;
   margin-left: 10px;
-  top: 0px;
+  left: 10px;
+  display: block;
 }
 
 #map{
@@ -277,11 +277,10 @@ html {
 #coolImg{
   width: 100vw;
   position: absolute;
-  filter: brightness(110%);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   top:200px;
   left: 0;
-
-
 }
 
 #contact {
@@ -327,11 +326,45 @@ section > p {
   margin-bottom: 80px;
   text-align: center;
 }
-
 /*****************************************
-Slideshow
+Projects
 /*****************************************/
 
+/*.projectWrapper{
+  position: absolute;
+}*/
+.projectInfo {
+  position: absolute;
+  left: 600px;
+  top: 0px;
+  padding: 10px;
+  font-size: 16pt;
+
+}
+.navn{
+  font-size: 20pt
+}
+.mediaPlayer{
+  position: relative;
+  top:-300px;
+  left: 570px;
+  width: 400px;
+  height: 150px;
+
+}
+@media only screen
+and (max-width: 1145px){
+  #projects{
+    height: 2000px;
+  }
+  .projectInfo{
+    top: 500px;
+  }
+  .mediaPlayer{
+    top:200px;
+    display: inline-block;
+  }
+}
 #slides {
   position: relative;
   height: 500px;
@@ -427,12 +460,12 @@ Slideshow
     transform: translateX(0) ;
   }
 }
-
 /*****************************************
 slideshow style
 /*****************************************/
 
 .slide {
+  font-family: "Open Sans";
   font-size: 40px;
   padding: 40px;
   box-sizing: border-box;
@@ -522,7 +555,7 @@ Contacts
   animation: shake 0.9s ease-in-out;
   transition: .2s;
   filter:grayscale(0);
-
+  cursor: pointer;
 }
 
 @keyframes shake {
@@ -635,4 +668,10 @@ ContactSlide style
 
 .info > span {
   font-size: 22px;
+}
+/*****************************************
+Calendar
+/*****************************************/
+#calendar{
+  left: 1000px;
 }
