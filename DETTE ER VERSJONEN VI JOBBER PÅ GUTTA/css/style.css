@@ -202,7 +202,6 @@ footer {
   position: relative;
 }
 .socialMedia:hover{
-  -webkit-filter: brightness(80%);
   filter:brightness(80%);
 }
 
@@ -230,18 +229,18 @@ and (max-width: 1145px){
     width: 96%;
     left:2%;
   }
-
   footer{
     height: 720px;
   }
-
   #socialMedia{
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     top: 10%;
   }
+  #SC{
 
+  }
   .textWrapper{
     top: 200px;
     margin-left: 30%;
@@ -275,7 +274,6 @@ html {
   overflow-x: hidden;
 }
 
-<<<<<<< Updated upstream:DETTE ER VERSJONEN VI JOBBER PÅ GUTTA/css/style.css
 #coolImg{
   width: 100vw;
   position: absolute;
@@ -284,9 +282,6 @@ html {
   top:200px;
   left: 0;
 }
-=======
-
->>>>>>> Stashed changes:DETTE ER VERSJONEN VI JOBBER PÅ GUTTA/style.css
 
 #contact {
   position: relative;
@@ -297,45 +292,22 @@ Background
 
 #background{
   width: 100%;
-  height: 700px;
+  height: 776px;
   overflow: hidden;
   position: relative;
   box-shadow: 0px 1px 5px #666;
+
 }
 
-#homePhoto{
+#homePhoto, #filter{
+  position: absolute;
+  width: 100%;
   height: 776px;
-  /*background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
-<<<<<<< Updated upstream:DETTE ER VERSJONEN VI JOBBER PÅ GUTTA/css/style.css
   background-position: 50% 50%;
 }
 
-=======
-  background-position: 50% 50%;*/
-
-  /* keeps the background image centered when resizing */
-  margin-top: -76px;
-  margin-left: -710px;
-  padding-left: 50vw;
-
-}
-
-
-@media only screen
-and (max-width: 1036px){
-  #homePhoto{
-    width: 100%;
-    height:auto;
-    padding: 0;
-    margin:0;
-  }
-  #background{
-    height: 55vw;
-  }
-
-}
->>>>>>> Stashed changes:DETTE ER VERSJONEN VI JOBBER PÅ GUTTA/style.css
 /*****************************************
 Text
 /*****************************************/
@@ -581,9 +553,7 @@ Contacts
 
 .contactImg:hover {
   animation: shake 0.9s ease-in-out;
-  -webkit-transition: .2s;
   transition: .2s;
-  -webkit-filter: grayscale(0);
   filter:grayscale(0);
   cursor: pointer;
 }
@@ -606,9 +576,7 @@ Contacts
 .contactImg {
   width:80%;
   border-radius: 50%;
-  -webkit-filter: grayscale(100%);
   filter:grayscale(100%);
-  z-index: 8;
 }
 
 .person{
@@ -618,7 +586,9 @@ Contacts
 }
 
 #contactPeople{
-  margin-left: 7vw;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
@@ -630,7 +600,7 @@ contactSlideshow
 
 #contactSlides {
   position: relative;
-  height: 60vw;
+  height: 300px;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -654,7 +624,6 @@ contactSlideshow
 .contactShowing {
     opacity: 1;
     z-index: 2;
-    height: inherit;
 }
 
 
@@ -664,13 +633,13 @@ ContactSlide style
 
 .contactSlide {
   font-size: 40px;
-  padding-top: 2vw;
+  padding: 40px;
   box-sizing: border-box;
   color: rgba(0,0,0,0.7);
 }
 
 .contactSlide > img {
-  height: 25vw;
+  height: 250px;
   border-radius: 2%;
 }
 
@@ -682,34 +651,23 @@ ContactSlide style
 }
 
 .activeContact{
-  -webkit-filter: grayscale(0);
   filter:grayscale(0);
 }
 
 .info {
   position: absolute;
-  display: inline-block;
-  left: 20vw;
+  left: 260px;
+  top: 40px;
   padding: 10px;
-
 
   background-color: rgba(256,256,256,0.8);
   border-radius: 10%;
 
-  font-size: 3vw;
+  font-size: 30px;
 }
 
 .info > span {
-  font-size: 2vw;
-}
-
-#coolImg{
-  width: 100vw;
-  position: absolute;
-  top: 200px;
-  left: 0;
-
-
+  font-size: 22px;
 }
 /*****************************************
 Calendar
