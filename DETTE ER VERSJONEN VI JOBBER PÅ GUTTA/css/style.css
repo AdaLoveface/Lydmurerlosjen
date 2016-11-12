@@ -274,6 +274,19 @@ html {
   overflow-x: hidden;
 }
 
+#coolImg{
+  width: 100vw;
+  position: absolute;
+  filter: brightness(110%);
+  top:200px;
+  left: 0;
+
+
+}
+
+#contact {
+  position: relative;
+}
 /*****************************************
 Background
 /*****************************************/
@@ -550,6 +563,8 @@ Contacts
 contactSlideshow
 /*****************************************/
 
+.contactContainer{}
+
 #contactSlides {
   position: relative;
   height: 300px;
@@ -587,7 +602,6 @@ ContactSlide style
   font-size: 40px;
   padding: 40px;
   box-sizing: border-box;
-  background: #fff;
   color: rgba(0,0,0,0.7);
 }
 
@@ -596,13 +610,29 @@ ContactSlide style
   border-radius: 2%;
 }
 
-.container {
+.contactContainer {
   position:relative;
-  margin-left:50px;
-  margin-right:20px;
+  width: 60%;
+  margin-left:20%;
+  margin-right:20%;
 }
 
 .activeContact{
   filter:grayscale(0);
+}
 
+.info {
+  position: absolute;
+  left: 260px;
+  top: 40px;
+  padding: 10px;
+
+  background-color: rgba(256,256,256,0.8);
+  border-radius: 10%;
+
+  font-size: 30px;
+}
+
+.info > span {
+  font-size: 22px;
 }
