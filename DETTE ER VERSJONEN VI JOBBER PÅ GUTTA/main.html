@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>LYDMURERLOSJEN</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel='shortcut icon' href='LML.jpg' type='image/x-icon'/> <!--Favicon. Skal egentlig være .ico-fil -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel='shortcut icon' href='img/LML.jpg' type='image/x-icon'/> <!--Favicon. Skal egentlig være .ico-fil -->
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-    <script type="text/javascript" src="googleMaps.js"></script>
+    <script type="text/javascript" src="js/googleMaps.js"></script>
   </head>
 
   <body id="body" onscroll="changeHeader()" onload="changeHeader()" onresize="updatePosition()">
@@ -32,7 +32,7 @@
     <section id="home">
       <div id="background">
         <div id="filter"></div>
-        <img id="homePhoto" src="PB-LOGO.png" alt="img/png">
+        <img id="homePhoto" src="img/PB-LOGO.png" alt="img/png">
       </div>
     </section>
 
@@ -85,23 +85,23 @@
         <ul id="slides">
           <!-- SLIDE 1 -->
           <li class="slide showing">
-            <img class="slideImg" src="mgid-uma-artist-mtv.com-502642.jpg" alt="img/jpg" />
+            <img class="slideImg" src="img/projects/mgid-uma-artist-mtv.com-502642.jpg" alt="img/jpg" />
           </li>
           <!-- SLIDE 2 -->
           <li class="slide">
-            <img class="slideImg" src="mgid-uma-artist-mtv.com-1230523.jpg" alt="img/jpg" />
+            <img class="slideImg" src="img/projects/mgid-uma-artist-mtv.com-1230523.jpg" alt="img/jpg" />
           </li>
         <!-- SLIDE 3 -->
         <li class="slide">
-          <img class="slideImg"src="mgid-uma-artist-mtv.com-3187077.jpg" alt="img/jpg" />
+          <img class="slideImg"src="img/projects/mgid-uma-artist-mtv.com-3187077.jpg" alt="img/jpg" />
         </li>
         <!-- SLIDE 4 -->
         <li class="slide">
-          <img class="slideImg" src="contact_people/Eigil2.png" alt="img/jpg" />
+          <img class="slideImg" src="img/contact_people/Eigil2.png" alt="img/jpg" />
         </li>
         <!-- SLIDE 5 -->
         <li class="slide">
-          <img class="slideImg" src="contact_people/Sondre2.png" alt="img/png" />
+          <img class="slideImg" src="img/contact_people/Sondre2.png" alt="img/png" />
         </li>
       </ul>
       <div id="dots">
@@ -128,43 +128,43 @@
         <div class="person">
           <img  class="contactImg activeContact"
                 onclick="goToContactSlide(0)"
-                src="contact_people/Erle2.png" alt="img/jpg" />
+                src="img/contact_people/Erle2.png" alt="img/jpg" />
         </div>
 
         <div class="person">
           <img  class="contactImg"
                 onclick="goToContactSlide(1)"
-                src="contact_people/Eigil2.png" alt="img/jpg" />
+                src="img/contact_people/Eigil2.png" alt="img/jpg" />
         </div>
 
         <div class="person">
           <img  class="contactImg"
                 onclick="goToContactSlide(2)"
-                src="contact_people/Sturla2.png" alt="img/jpg" />
+                src="img/contact_people/Sturla2.png" alt="img/jpg" />
         </div>
 
         <div class="person">
           <img  class="contactImg"
                 onclick="goToContactSlide(3)"
-                src="contact_people/Ada2.png" alt="img/jpg" />
+                src="img/contact_people/Ada2.png" alt="img/jpg" />
         </div>
 
         <div class="person">
           <img  class="contactImg"
                 onclick="goToContactSlide(4)"
-                src="contact_people/Sondre2.png" alt="img/jpg" />
+                src="img/contact_people/Sondre2.png" alt="img/jpg" />
         </div>
 
         <div class="person">
           <img  class="contactImg"
                 onclick="goToContactSlide(5)"
-                src="contact_people/Lars2.png" alt="img/jpg" />
+                src="img/contact_people/Lars2.png" alt="img/jpg" />
         </div>
 
         <div class="person">
           <img  class="contactImg"
                 onclick="goToContactSlide(6)"
-                src="contact_people/Audun2.png" alt="img/jpg" />
+                src="img/contact_people/Audun2.png" alt="img/jpg" />
         </div>
       </div>
 
@@ -172,36 +172,59 @@
         <ul id="contactSlides">
           <!-- SLIDE 1 -->
           <li class="contactSlide contactShowing">
-            <img src="contact_people/Erle2.png" alt="img/jpg" />
+            <img src="img/contact_people/Erle2.png" alt="img/jpg" />
             <p>
               Leder <br>
               Erle Romundstad Mylius <br>
-
             </p>
           </li>
           <!-- SLIDE 2 -->
           <li class="contactSlide">
-            <img src="contact_people/Eigil2.png" alt="img/png" />
+            <img src="img/contact_people/Eigil2.png" alt="img/png" />
+            <p>
+              Rolle <br>
+              Eigil Aandahl<br>
+            </p>
           </li>
           <!-- SLIDE 3 -->
           <li class="contactSlide">
-            <img class=""src="contact_people/Sturla2.png" alt="img/png" />
+            <img class=""src="img/contact_people/Sturla2.png" alt="img/png" />
+          <p>
+            Rolle <br>
+            Sturla Myklebost <br>
+          </p>
           </li>
           <!-- SLIDE 4 -->
           <li class="contactSlide">
-            <img src="contact_people/Ada2.png" alt="img/png" />
+            <img src="img/contact_people/Ada2.png" alt="img/png" />
+          <p>
+            Rolle <br>
+            Ada Mathea Hoel <br>
+          </p>
           </li>
           <!-- SLIDE 5 -->
           <li class="contactSlide">
-            <img src="contact_people/Sondre2.png" alt="img/png" />
+            <img src="img/contact_people/Sondre2.png" alt="img/png" />
+          <p>
+            Rolle <br>
+            Sondre Christoffersen <br>
+          </p>
           </li>
           <!-- SLIDE 6 -->
           <li class="contactSlide">
-            <img src="contact_people/Lars2.png" alt="img/png" />
+            <img src="img/contact_people/Lars2.png" alt="img/png" />
+          <p>
+            Rolle <br>
+            Lars Horn Lavik
+          </p>
           </li>
           <!-- SLIDE 7 -->
           <li class="contactSlide">
-            <img src="contact_people/Audun2.png" alt="img/png" />
+            <img src="img/contact_people/Audun2.png" alt="img/png" />
+          <p>
+            Rolle <br>
+            Audun Agnar Guldbrandsen <br>
+          </p>
           </li>
         </ul>
       </div>
@@ -231,7 +254,7 @@
         <a id="Facebook" href="https://www.facebook.com/lydmurerlosjen/"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMedia"/></a>
         <!-- <iframe src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fadahoel&color=orange_white&size=64" style="width: 64px; height: 64px;" id="SC"></iframe> -->
         <a href="https://www.instagram.com/mustekntnu/"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMedia"/></a>
-
+        <!-- <a id="Soundcloud" href="https://www.soundcloud.com/"><img id="SCimage" title="Soundcloud" alt="RSS" src="img/Soundcloud.ico" class="socialMedia"/></a> -->
 
       </div>
       <div id="map"></div>
@@ -242,8 +265,9 @@
     </footer>
 
 
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="slideshow.js"></script>
-    <script type="text/javascript" src="contactSlides.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/contactSlides.js"></script>
   </body>
 </html>

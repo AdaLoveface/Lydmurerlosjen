@@ -210,10 +210,15 @@ footer {
   /*padding-left: 50px;*/
 }
 
-#SC {
-  border-radius: 100%;
-  position: absolute;
-  left: 30%;
+#SCimage {
+  border-radius: 50%;
+  /*display: inline;*/
+  /*margin: 0 auto;
+  height: 100%;
+  width: auto;
+  overflow: hidden;*/
+
+
 }
 
 @media only screen
@@ -289,21 +294,8 @@ Background
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
-  /* keeps the background image centered when resizing */
-  margin-top: -80px;
-   /*holder bildet midtstilt ved resizing */
-  /*margin-top: -80px;
-  margin-left: -650px;
-  padding-left: 50vw;*/
-
 }
 
-/*@media only screen
-and (min-width: 910px){
-  #homePhoto{
-    background-size: 100% 100%
-}*/
 /*****************************************
 Text
 /*****************************************/
@@ -475,10 +467,10 @@ slideshow style
   left: -38px;
   top: 40%;
 
-  padding-left: 10px;
-  padding-right: 8px;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
+  padding-left: 5px;
+  padding-right: 20px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 .controls:hover {
