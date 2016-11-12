@@ -43,11 +43,12 @@ var sections = [
 // updating positions incase of resize
 // home position will always be 0 so the loop starts at i=1
 function updatePosition() {
+  console.log('position'+sections[3]);
   for (var i = 1; i < sections.length; i++) {
     sections[i].position = document.getElementById(sections[i].id).offsetTop;
   }
 };
-document.getElementById('body').addEventListener("resize",updatePosition());
+updatePosition();
 
 // --------------------------------------------
 // Making the anchor-scroll smooth
@@ -103,7 +104,6 @@ function changeHeader(){
 
   for (var i = 0; i < sections.length-1; i++) {
     if (pixelsScrolled < sections[i+1].position) {
-      //title.innerHTML = sections[i].name;
       // document.getElementById('headerBar').style.transition = "all 600ms ease-in-out";
       document.getElementById('headerBar').style.backgroundColor = sections[i].color;
       return;

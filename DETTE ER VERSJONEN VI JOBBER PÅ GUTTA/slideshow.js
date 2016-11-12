@@ -14,7 +14,6 @@ function nextSlide() {
 function previousSlide() {
   currentDir = 0;
   goToSlide(currentSlide-1);
-
 }
 
 function goToSlide(n) {
@@ -24,7 +23,8 @@ function goToSlide(n) {
 
   currentSlide = (n+slides.length)%slides.length;
   console.log(currentDir);
-  if (currentDir) {
+  if (n>prevSlide) {
+    // if on last slide
     slides[prevSlide].className = 'slide slideOutLeft';
     slides[currentSlide].className = 'slide showing fromRight';
 

@@ -11,7 +11,7 @@
     <script type="text/javascript" src="googleMaps.js"></script>
   </head>
 
-  <body id="body" onscroll="changeHeader()" onload="changeHeader()">
+  <body id="body" onscroll="changeHeader()" onload="changeHeader()" onresize="updatePosition()">
 
     <header id="headerBar">
 
@@ -83,42 +83,38 @@
 
       <div class="container">
         <ul id="slides">
-            <!-- SLIDE 1 -->
-            <li class="slide showing">
-              <img class="slideImg" src="mgid-uma-artist-mtv.com-502642.jpg" alt="img/jpg" />
-            </li>
-            <!-- SLIDE 2 -->
-            <li class="slide">
-              <img class="slideImg" src="mgid-uma-artist-mtv.com-1230523.jpg" alt="img/jpg" />
-            </li>
-            <!-- SLIDE 3 -->
-            <li class="slide">
-              <img class="slideImg"src="mgid-uma-artist-mtv.com-3187077.jpg" alt="img/jpg" />
-            </li>
-            <!-- SLIDE 4 -->
-            <li class="slide">
-              <img class="slideImg" src="contact_people/Eigil2.png" alt="img/jpg" />
-            </li>
-            <!-- SLIDE 5 -->
-            <li class="slide">
-              <img class="slideImg" src="contact_people/Sondre2.png" alt="img/png" />
-            </li>
-        </ul>
-        <div id="dots">
-          <span class="dot active" onclick="goToSlide(0)"></span>
-          <span class="dot" onclick="goToSlide(1)"></span>
-          <span class="dot" onclick="goToSlide(2)"></span>
-          <span class="dot" onclick="goToSlide(3)"></span>
-          <span class="dot" onclick="goToSlide(4)"></span>
-        </div>
-        <div class="buttons">
+          <!-- SLIDE 1 -->
+          <li class="slide showing">
+            <img class="slideImg" src="mgid-uma-artist-mtv.com-502642.jpg" alt="img/jpg" />
+          </li>
+          <!-- SLIDE 2 -->
+          <li class="slide">
+            <img class="slideImg" src="mgid-uma-artist-mtv.com-1230523.jpg" alt="img/jpg" />
+          </li>
+        <!-- SLIDE 3 -->
+        <li class="slide">
+          <img class="slideImg"src="mgid-uma-artist-mtv.com-3187077.jpg" alt="img/jpg" />
+        </li>
+        <!-- SLIDE 4 -->
+        <li class="slide">
+          <img class="slideImg" src="contact_people/Eigil2.png" alt="img/jpg" />
+        </li>
+        <!-- SLIDE 5 -->
+        <li class="slide">
+          <img class="slideImg" src="contact_people/Sondre2.png" alt="img/png" />
+        </li>
+      </ul>
+      <div id="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+      </div>
+      <div class="buttons">
 
-          <button class="controls" id="previous">⦉
-          </button>
-
-
-          <button class="controls" id="next">⦊
-          </button>
+        <button class="controls" id="previous">⦉</button>
+        <button class="controls" id="next">⦊</button>
 
       </div>
 
@@ -129,41 +125,85 @@
       <div class="headers">CONTACT</div>
 
       <div id="contactPeople">
-
-        <div id="leftSide">
-          <div class="person">
-            <img class="contactImg" src="contact_people/Audun.jpg" alt="img/jpg" />
-            <span>Audun<br> </span>
-          </div>
-
-          <div class="person">
-            <img class="contactImg" src="contact_people/Eigil.jpg" alt="img/jpg" />
-            <span>Eigil<br> </span>
-          </div>
-        </div>
         <div class="person">
-          <img class="contactImg" src="contact_people/ada.jpg" alt="img/jpg" />
-          <span>Ada <br>
-          </span>
+          <img  class="contactImg activeContact"
+                onclick="goToContactSlide(0)"
+                src="contact_people/Erle2.png" alt="img/jpg" />
         </div>
+
         <div class="person">
-          <img class="contactImg" src="contact_people/Erle.jpg" alt="img/jpg" />
-          <span>Erle<br> </span>
+          <img  class="contactImg"
+                onclick="goToContactSlide(1)"
+                src="contact_people/Eigil2.png" alt="img/jpg" />
         </div>
-        <div id="rightSide">
-          <div class="person">
-            <img class="contactImg" src="contact_people/Lars.jpg" alt="img/jpg" />
-            <span>Lars<br> </span>
-          </div>
-          <div class="person">
-            <img class="contactImg" src="contact_people/Sondre.jpg" alt="img/jpg" />
-            <span>Sondre<br> </span>
-          </div>
-          <div class="person">
-            <img class="contactImg" src="contact_people/Sturla.jpg" alt="img/jpg" />
-            <span>Sturla<br> </span>
-          </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(2)"
+                src="contact_people/Sturla2.png" alt="img/jpg" />
         </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(3)"
+                src="contact_people/Ada2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(4)"
+                src="contact_people/Sondre2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(5)"
+                src="contact_people/Lars2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(6)"
+                src="contact_people/Audun2.png" alt="img/jpg" />
+        </div>
+      </div>
+
+      <div class="container">
+        <ul id="contactSlides">
+          <!-- SLIDE 1 -->
+          <li class="contactSlide contactShowing">
+            <img src="contact_people/Erle2.png" alt="img/jpg" />
+            <p>
+              Leder <br>
+              Erle Romundstad Mylius <br>
+
+            </p>
+          </li>
+          <!-- SLIDE 2 -->
+          <li class="contactSlide">
+            <img src="contact_people/Eigil2.png" alt="img/png" />
+          </li>
+          <!-- SLIDE 3 -->
+          <li class="contactSlide">
+            <img class=""src="contact_people/Sturla2.png" alt="img/png" />
+          </li>
+          <!-- SLIDE 4 -->
+          <li class="contactSlide">
+            <img src="contact_people/Ada2.png" alt="img/png" />
+          </li>
+          <!-- SLIDE 5 -->
+          <li class="contactSlide">
+            <img src="contact_people/Sondre2.png" alt="img/png" />
+          </li>
+          <!-- SLIDE 6 -->
+          <li class="contactSlide">
+            <img src="contact_people/Lars2.png" alt="img/png" />
+          </li>
+          <!-- SLIDE 7 -->
+          <li class="contactSlide">
+            <img src="contact_people/Audun2.png" alt="img/png" />
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -204,5 +244,6 @@
 
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="slideshow.js"></script>
+    <script type="text/javascript" src="contactSlides.js"></script>
   </body>
 </html>
