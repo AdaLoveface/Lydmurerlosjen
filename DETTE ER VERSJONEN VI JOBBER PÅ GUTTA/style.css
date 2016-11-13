@@ -366,13 +366,13 @@ Projects
   left: 500px;
 }
 .navn{
-  font-size: 20pt
+  font-size: 1.5vw;
 }
 .projectInfo {
   position: relative;
   /*left: 600px;*/
   padding-top: 10px;
-  font-size: 14pt;
+  font-size: 1.3vw;
 }
 .mediaPlayer{
   position: relative;
@@ -731,6 +731,11 @@ ContactSlide style
   padding-bottom: 25px;
 
   background-color: rgba(255,255,255,0.8);
+<<<<<<< HEAD
+=======
+  border-radius: 10%;
+
+>>>>>>> origin/master
   border-radius: 15px;
 
   font-size: 3vw;
