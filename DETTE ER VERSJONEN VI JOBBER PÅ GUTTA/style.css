@@ -282,7 +282,7 @@ Background
 
 #background{
   width: 100%;
-  height: 700px;
+  height: 90vh;
   overflow: hidden;
   position: relative;
   box-shadow: 0px 1px 5px #666;
@@ -309,7 +309,18 @@ and (max-width: 1036px){
     height: 55vw;
   }
 }
-
+@media only screen
+and (min-width: 1400px) {
+  #homePhoto{
+    width: 100%;
+    height:auto;
+    padding: 0;
+    margin:0;
+  }
+  #background{
+    height: 790px;
+  }
+}
 /*****************************************
 Text
 /*****************************************/
@@ -333,39 +344,34 @@ section > p {
 Projects
 /*****************************************/
 
-/*.projectWrapper{
+.projectWrapper{
   position: absolute;
-}*/
-.projectInfo {
-  position: absolute;
-  left: 600px;
+  right: 170px;
   top: 0px;
-  padding: 10px;
-  font-size: 16pt;
-
 }
 .navn{
   font-size: 20pt
 }
+.projectInfo {
+  position: relative;
+  /*left: 600px;*/
+  padding-top: 10px;
+  font-size: 16pt;
+}
 .mediaPlayer{
   position: relative;
-  top:-300px;
-  left: 570px;
   width: 400px;
   height: 150px;
-
 }
 @media only screen
-and (max-width: 1145px){
+and (max-width: 1300px){
   #projects{
-    height: 2000px;
+    height: 1200px;
   }
-  .projectInfo{
-    top: 500px;
-  }
-  .mediaPlayer{
-    top:200px;
-    display: inline-block;
+  .projectWrapper{
+    top: 600px;
+    margin-left:10%;
+    margin-right:10%;
   }
 }
 #slides {
