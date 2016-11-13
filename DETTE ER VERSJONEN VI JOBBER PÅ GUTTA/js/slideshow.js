@@ -1,4 +1,8 @@
-
+/********************************************************
+https://www.sitepoint.com/make-a-simple-javascript-slideshow-without-jquery/
+Used for foundation/inspiration for the slideshow, but the implementation of
+the arrow keys was created by Ada from the team. 
+*********************************************************/
 var slides = document.querySelectorAll('#slides .slide');
 var prevSlide = 0;
 var currentSlide = 0;
@@ -49,7 +53,7 @@ previous.onclick = function() {
   previousSlide();
 };
 
-//Next and previous with arrows
+//MADE BY THE TEAM
 document.addEventListener("keyup", function (event){
   var key = event.which || event.keyCode;
   if (key === 39){
