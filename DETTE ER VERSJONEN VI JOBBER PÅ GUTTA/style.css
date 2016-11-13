@@ -91,9 +91,14 @@ a:link{
   top: 20px;
   left: 10px;
 }
-/*#sidebarButton:hover{
-  border-right: 200px;
-}*/
+
+/*Makes hover area larger to aviod menu disappearing*/
+.sideBarToggle:hover{
+  width: 200px;
+  height: 50px;
+}
+
+/*Slides out menu when togglebutton hovered*/
 .sideBarToggle:hover + .sideBar, .sideBar:hover{
   display: block;
   -webkit-animation: animateSideBar 600ms ease-in-out;
@@ -588,7 +593,7 @@ About
   margin-top: 0px;
 }
 #about{
-  height: 110vh;
+  height: 800px;
 }
 
 /*****************************************
@@ -600,10 +605,11 @@ Events
 }
 #events{
   background-color: #252525;
-  height: 120vh;
+  height: 800px;
 }
 #events > p{
   filter: invert(100%);
+  text-align: center;
 }
 /*****************************************
 Contacts
@@ -722,11 +728,10 @@ ContactSlide style
   display: inline-block;
   left: 20vw;
   padding: 10px;
-  /*line-height: 90%;*/
-
+  padding-bottom: 25px;
 
   background-color: rgba(255,255,255,0.8);
-  border-radius: 10%;
+  border-radius: 15px;
 
   font-size: 3vw;
 }
@@ -740,12 +745,26 @@ ContactSlide style
   position: absolute;
   top: 200px;
   left: 0;
-
-
 }
+
 /*****************************************
 Calendar
 /*****************************************/
+
 #calendar{
-  left: 1000px;
+  margin-left: -6px;
+  margin-top: -30px;
+}
+
+.calendarWrapper{
+
+  max-width: 787px;
+  width: 80%;
+  filter: sepia(5%);
+  height: 370px;
+  overflow: hidden;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
