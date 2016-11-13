@@ -22,7 +22,7 @@ function goToSlide(n) {
 
 
   currentSlide = (n+slides.length)%slides.length;
-  console.log(currentDir);
+  // console.log(currentDir);
   if (n>prevSlide) {
     // if on last slide
     slides[prevSlide].className = 'slide slideOutLeft';
@@ -43,6 +43,17 @@ function goToSlide(n) {
 
 var next = document.getElementById('next');
 var previous = document.getElementById('previous');
+
+//Next and previous with arrows
+document.addEventListener("keydown", function (event){
+  var key = event.which || event.keyCode;
+  if (key === 39){
+    nextSlide();
+  }
+  else if (key === 37){
+    previousSlide();
+  }
+});
 
 next.onclick = function() {
   nextSlide();

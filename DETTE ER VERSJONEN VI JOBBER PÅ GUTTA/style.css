@@ -45,7 +45,9 @@ a:link, a:visited, a:hover, a:active{
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
-
+a:link{
+  color: #cc6349;
+}
 /* Highlights background when mouse hover */
 
 .sideBar > ul > #homeSB:hover,
@@ -84,18 +86,20 @@ a:link, a:visited, a:hover, a:active{
   line-height: 0;
   cursor: pointer;
 
+
   position: fixed;
   top: 20px;
   left: 10px;
 }
-
+/*#sidebarButton:hover{
+  border-right: 200px;
+}*/
 .sideBarToggle:hover + .sideBar, .sideBar:hover{
   display: block;
-
-    -webkit-animation: animateSideBar 600ms ease-in-out;
-    -moz-animation: animateSideBar 600ms ease-in-out;
-    -o-animation: animateSideBar 600ms ease-in-out;
-    animation: animateSideBar 600ms ease-in-out;
+  -webkit-animation: animateSideBar 600ms ease-in-out;
+  -moz-animation: animateSideBar 600ms ease-in-out;
+  -o-animation: animateSideBar 600ms ease-in-out;
+  animation: animateSideBar 600ms ease-in-out;
 }
 
 @keyframes animateSideBar {
@@ -121,7 +125,6 @@ a:link, a:visited, a:hover, a:active{
 header {
   width: 100%;
   height: 50px;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -258,7 +261,7 @@ and (max-width: 1145px){
 
 
 /*****************************************
-misc
+Misc
 /*****************************************/
 
 body {
@@ -273,6 +276,13 @@ html {
 
 #contact {
   position: relative;
+}
+a{
+  color: blue;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 /*****************************************
 Background
@@ -325,8 +335,9 @@ Text
 
 section > p {
   font-family: 'Open Sans', Arial, sans-serif, Helvetica;
+  font-size: 14pt;
   color: #222;
-  margin: 100px 15% 200px 15%;
+  margin: 0px 15% 20px 15%;
 }
 
 .headers {
@@ -340,11 +351,14 @@ section > p {
 /*****************************************
 Projects
 /*****************************************/
-
+#projects{
+  background-color: #252525;
+}
 .projectWrapper{
   position: absolute;
   right: 170px;
   top: 0px;
+  left: 700px;
 }
 .navn{
   font-size: 20pt
@@ -353,7 +367,7 @@ Projects
   position: relative;
   /*left: 600px;*/
   padding-top: 10px;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 .mediaPlayer{
   position: relative;
@@ -363,12 +377,13 @@ Projects
 @media only screen
 and (max-width: 1200px){
   #projects{
-    margin-bottom: 700px;
+    height: 1300px;
   }
   .projectWrapper{
     top: 600px;
     margin-left:10%;
     margin-right:10%;
+    left: 20px;
   }
 }
 #slides {
@@ -551,6 +566,12 @@ slideshow dots
   background-color: #777;
 }
 
+/*****************************************
+About
+/*****************************************/
+#aboutHeader{
+  margin-top: 0px;
+}
 
 /*****************************************
 Contacts
@@ -676,10 +697,9 @@ ContactSlide style
   font-size: 3vw;
 }
 
-.info > span {
-  font-size: 2vw;
+.contactInfo{
+  font-size: 1.7vw;
 }
-
 #coolImg{
   width: 100vw;
   position: absolute;

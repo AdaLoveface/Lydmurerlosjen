@@ -14,8 +14,7 @@
   <body id="body" onscroll="changeHeader()" onload="changeHeader()" onresize="updatePosition()">
 
     <header id="headerBar">
-
-      <a class="sideBarToggle">≣</a>
+      <a class="sideBarToggle" id="sideBarButton">≣</a>
       <nav class="sideBar">
         <ul>
           <li id="homeSB">Hjem</li>
@@ -38,7 +37,7 @@
 
     <!-- ABOUT -->
     <section id="about">
-      <div class="headers">OM</div>
+      <div id = "aboutHeader" class="headers">OM</div>
       <p>
         Lydmurerlosjen er linjeforeningen til musikkteknologistudiet ved NTNU.
         Vår visjon er å skape en helhetlig sosial ramme for musikkteknologistudenter
@@ -226,10 +225,10 @@ style="border-width:0" width="800" height="600"></iframe>
             <p class="info">
               Leder <br>
               <span>Erle Romundstad Mylius</span> <br>
-              <span>Leder har ansvar for å innkalle til styremøter, organisere
+              <span class="contactInfo">Leder har ansvar for å innkalle til styremøter, organisere
                 og sørge for å gjennomføre målene som blir satt. Lederen må ha
                 god oversikt over alle vervene i styret og bistå der det trengs.<br>
-                styreleder@lydmurerlosjen.no
+                <a href="styreleder@lydmurerlosjen.no">styreleder@lydmurerlosjen.no</a>
               </span>
             </p>
           </li>
@@ -239,10 +238,10 @@ style="border-width:0" width="800" height="600"></iframe>
             <p class="info">
               Nestleder <br>
               <span>Eigil Aandahl</span> <br>
-              <span>Nestleder assisterer leder og tar over i leders fravær.
+              <span class="contactInfo">Nestleder assisterer leder og tar over i leders fravær.
                 Holder styr på aktive oppgaver og bidrar ellers med planlegging
                 og gjennomføring av arrangementer. <br>
-                nestleder@lydmurerlosjen.no</span>
+                <a href="nestleder@lydmurerlosjen.no">nestleder@lydmurerlosjen.no</span></a>
             </p>
           </li>
           <!-- SLIDE 3 -->
@@ -251,7 +250,7 @@ style="border-width:0" width="800" height="600"></iframe>
           <p class="info">
             Økonomiansvarlig <br>
             <span>Sturla Myklebost</span> <br>
-            <span>Økonomiansvarlig har ansvar for linjeforeningens økonomi.
+            <span class="contactInfo">Økonomiansvarlig har ansvar for linjeforeningens økonomi.
               Skriver søknader og setter opp budsjetter til fakultetet, SIT og
               andre organisasjoner slik at det blir mulig å gjennomføre Lydmurerlosjens
               arrangementer. <br>
@@ -264,8 +263,8 @@ style="border-width:0" width="800" height="600"></iframe>
             <p class="info">
               PR-­ansvarlig <br>
               <span>Ada Mathea Hoel</span> <br>
-              <span><br>
-              event@lydmurerlosjen.<noscript>
+              <span class="contactInfo"><br>
+              <a href="event@lydmurerlosjen">event@lydmurerlosjen.</a><noscript>
 
               </noscript></span>
             </p>
@@ -319,9 +318,9 @@ style="border-width:0" width="800" height="600"></iframe>
       </div>
     </div>
       <div id="socialMedia">
-        <a id="Facebook" href="https://www.facebook.com/lydmurerlosjen/"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMedia"/></a>
+        <a id="Facebook" href="https://www.facebook.com/lydmurerlosjen/" target="_blank"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMedia"/></a>
         <!-- <iframe src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fadahoel&color=orange_white&size=64" style="width: 64px; height: 64px;" id="SC"></iframe> -->
-        <a href="https://www.instagram.com/mustekntnu/"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMedia"/></a>
+        <a href="https://www.instagram.com/mustekntnu/" target="_blank"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMedia"/></a>
         <!-- <a id="Soundcloud" href="https://www.soundcloud.com/"><img id="SCimage" title="Soundcloud" alt="RSS" src="img/Soundcloud.ico" class="socialMedia"/></a> -->
 
       </div>

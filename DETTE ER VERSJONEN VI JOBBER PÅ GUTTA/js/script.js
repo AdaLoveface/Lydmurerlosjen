@@ -100,7 +100,7 @@ function changeHeader(){
   //var title = document.getElementById('headerTitle');
   var pixelsScrolled = document.getElementById('body').scrollTop;
 
-  console.log(pixelsScrolled);
+  // console.log(pixelsScrolled);
 
   for (var i = 0; i < sections.length-1; i++) {
     if (pixelsScrolled < sections[i+1].position) {
