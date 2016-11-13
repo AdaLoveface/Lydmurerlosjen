@@ -86,7 +86,6 @@ a:link{
   line-height: 0;
   cursor: pointer;
 
-
   position: fixed;
   top: 20px;
   left: 10px;
@@ -112,7 +111,6 @@ a:link{
     opacity: 0;
     transform: translateX(-250px) ;
   }
-
   100%{
     opacity: 1;
     transform: translateX(0) ;
@@ -123,7 +121,7 @@ a:link{
   header & footer
 *****************************************/
 
- footer, header, .sideBar {
+footer, header, .sideBar {
   background-color: #252525;
 }
 
@@ -138,6 +136,7 @@ header {
   z-index: 10;
 }
 
+/*Transition for colorchange*/
 #headerBar {
   -webkit-transition: all 600ms ease-in-out;
   -moz-transition: all 600ms ease-in-out;
@@ -214,7 +213,9 @@ footer {
   position: relative;
 }
 .socialMedia:hover{
-  -webkit-filter: brightness(80%);
+  -webkit-filter:brightness(80%);
+  -moz-filter:brightness(80%);
+  -o-filter:brightness(80%);
   filter:brightness(80%);
 }
 
@@ -290,6 +291,7 @@ html {
 a{
   color: blue;
 }
+
 p{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -365,43 +367,37 @@ Projects
 #projectsHeader{
   margin-bottom: 0px;
 }
-.projectWrapper{
-  position: absolute;
-  right: 170px;
-  top: 0px;
-  left: 500px;
-}
+
 .navn{
   font-size: 4vw;
 }
 .projectInfo {
-  position: relative;
-  /*left: 600px;*/
-  padding-top: 10px;
+  position: absolute;;
+  left:45vw;
+  top: 15%;
   font-size: 1.3vw;
+  width: 50%;
 }
+
 .mediaPlayer{
-  position: relative;
+  position: absolute;
+  left:45vw;
+  top: 60%;
+
   width: 400px;
   height: 150px;
 }
+
 .spotifyPlayer{
-  position: relative;
+  position: absolute;;
+  left:45vw;
+  top: 65%;
+
   width: 400px;
   height: 80px;
 }
-@media only screen
-and (max-width: 1200px){
-  #projects{
-    height: 1300px;
-  }
-  .projectWrapper{
-    top: 600px;
-    margin-left:10%;
-    margin-right:10%;
-    left: 20px;
-  }
-}
+
+
 #slides {
   position: relative;
   height: 500px;
@@ -511,28 +507,20 @@ slideshow style
 }
 
 .slideImg {
-  height: 400px;
+  max-height: 400px;
 }
 
-#BendikBilde{
+#BendikBilde, #HenrikBilde{
   position:absolute;
-  left: 100px;
-}
-
-#HenrikBilde{
-  position:absolute;
-  left: 100px;
+  left: 10vw;
 }
 
 .container {
   position:relative;
-  margin-left:50px;
-  margin-right:20px;
 
 }
 
 .controls{
-
   border: none;
   outline: none;
   background: none;
@@ -540,7 +528,9 @@ slideshow style
   font-size: 50px;
   height: 80px;
   z-index: 9;
-  color: rgba(0,0,0,0.4);
+  color: rgba(255,255,255,0.4);
+  background-color: rgba(0,0,0,0.6);
+  transition: all .2s ease-in-out;
 
 }
 
@@ -549,7 +539,6 @@ slideshow style
   right: 0px;
   top: 40%;
 
-
   padding-left: 20px;
   padding-right: 5px;
   border-top-left-radius: 80px;
@@ -557,7 +546,6 @@ slideshow style
 }
 #previous {
   position: absolute;
-  left: -38px;
   top: 40%;
 
   padding-left: 5px;
@@ -567,16 +555,17 @@ slideshow style
 }
 
 .controls:hover {
-  background-color: rgba(0,0,0,0.6);
-  color: rgba(255,255,255,0.8);
+  transform: scale(1.3);
+  color: rgba(255,255,255,0.7);
 }
+
 
 /*****************************************
 slideshow dots
 /*****************************************/
 #dots {
   position: absolute;
-  left: 45%;
+  left: 45vw;
 }
 
 .dot {

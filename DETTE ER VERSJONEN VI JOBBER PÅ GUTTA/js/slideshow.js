@@ -8,7 +8,6 @@ var currentDir = 1;
 function nextSlide() {
   currentDir = 1;
   goToSlide(currentSlide+1);
-
 }
 
 function previousSlide() {
@@ -21,8 +20,7 @@ function goToSlide(n) {
   dots = document.getElementsByClassName('dot');
 
 
-  currentSlide = (n+slides.length)%slides.length;
-  // console.log(currentDir);
+  currentSlide = n%slides.length;
   if (n>prevSlide) {
     // if on last slide
     slides[prevSlide].className = 'slide slideOutLeft';
@@ -44,6 +42,13 @@ function goToSlide(n) {
 var next = document.getElementById('next');
 var previous = document.getElementById('previous');
 
+next.onclick = function() {
+  nextSlide();
+};
+previous.onclick = function() {
+  previousSlide();
+};
+
 //Next and previous with arrows
 document.addEventListener("keyup", function (event){
   var key = event.which || event.keyCode;
@@ -57,10 +62,3 @@ document.addEventListener("keyup", function (event){
   }
 
 });
-
-next.onclick = function() {
-  nextSlide();
-};
-previous.onclick = function() {
-  previousSlide();
-};
