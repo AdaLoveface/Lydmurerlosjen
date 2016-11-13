@@ -294,6 +294,7 @@ p{
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 /*****************************************
 Background
 /*****************************************/
@@ -662,6 +663,13 @@ Contacts
 #contactPeople{
   margin-left: 7vw;
 }
+#styrenavn {
+  font-size: 2vw;
+}
+#styremail {
+  margin-top: 2vw;
+  font-size: 2vw;
+}
 
 .contactContainer >
 /*****************************************
@@ -734,7 +742,7 @@ ContactSlide style
   left: 20vw;
   padding: 10px;
   padding-bottom: 25px;
-  
+
   background-color: rgba(255,255,255,0.8);
   border-radius: 15px;
 
