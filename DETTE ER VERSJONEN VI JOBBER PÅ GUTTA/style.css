@@ -202,6 +202,7 @@ footer {
   position: relative;
 }
 .socialMedia:hover{
+  -webkit-filter: brightness(80%);
   filter:brightness(80%);
 }
 
@@ -229,18 +230,18 @@ and (max-width: 1145px){
     width: 96%;
     left:2%;
   }
+
   footer{
     height: 720px;
   }
+
   #socialMedia{
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
     top: 10%;
   }
-  #SC{
 
-  }
   .textWrapper{
     top: 200px;
     margin-left: 30%;
@@ -265,22 +266,11 @@ misc
 body {
   margin: 0;
   margin-top: 50px;
-
   background: #fff;
 }
 
-
 html {
   overflow-x: hidden;
-}
-
-#coolImg{
-  width: 100vw;
-  position: absolute;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  top:200px;
-  left: 0;
 }
 
 #contact {
@@ -292,20 +282,32 @@ Background
 
 #background{
   width: 100%;
-  height: 776px;
+  height: 700px;
   overflow: hidden;
   position: relative;
   box-shadow: 0px 1px 5px #666;
+}
+
+#homePhoto{
+  height: 776px;
+
+  margin-top: -76px;
+  margin-left: -710px;
+  padding-left: 50vw;
 
 }
 
-#homePhoto, #filter{
-  position: absolute;
-  width: 100%;
-  height: 776px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+@media only screen
+and (max-width: 1036px){
+  #homePhoto{
+    width: 100%;
+    height:auto;
+    padding: 0;
+    margin:0;
+  }
+  #background{
+    height: 55vw;
+  }
 }
 
 /*****************************************
@@ -313,7 +315,8 @@ Text
 /*****************************************/
 
 section > p {
-  font-family:'Open Sans';
+  /*font-family:'Open Sans';*/
+  font-family: 'Poiret One'
   color: #222;
   margin: 100px 15% 200px 15%;
 }
@@ -533,7 +536,7 @@ slideshow dots
 }
 
 .dot {
-  cursor:pointer;
+  cursor: pointer;
   height: 13px;
   width: 13px;
   background-color: #bbb;
@@ -553,7 +556,9 @@ Contacts
 
 .contactImg:hover {
   animation: shake 0.9s ease-in-out;
+  -webkit-transition: .2s;
   transition: .2s;
+  -webkit-filter: grayscale(0);
   filter:grayscale(0);
   cursor: pointer;
 }
@@ -576,7 +581,9 @@ Contacts
 .contactImg {
   width:80%;
   border-radius: 50%;
+  -webkit-filter: grayscale(100%);
   filter:grayscale(100%);
+  z-index: 8;
 }
 
 .person{
@@ -586,9 +593,7 @@ Contacts
 }
 
 #contactPeople{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7vw;
 }
 
 
@@ -600,7 +605,7 @@ contactSlideshow
 
 #contactSlides {
   position: relative;
-  height: 300px;
+  height: 60vw;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -624,6 +629,7 @@ contactSlideshow
 .contactShowing {
     opacity: 1;
     z-index: 2;
+    height: inherit;
 }
 
 
@@ -633,13 +639,13 @@ ContactSlide style
 
 .contactSlide {
   font-size: 40px;
-  padding: 40px;
+  padding-top: 2vw;
   box-sizing: border-box;
   color: rgba(0,0,0,0.7);
 }
 
 .contactSlide > img {
-  height: 250px;
+  height: 25vw;
   border-radius: 2%;
 }
 
@@ -651,23 +657,34 @@ ContactSlide style
 }
 
 .activeContact{
+  -webkit-filter: grayscale(0);
   filter:grayscale(0);
 }
 
 .info {
   position: absolute;
-  left: 260px;
-  top: 40px;
+  display: inline-block;
+  left: 20vw;
   padding: 10px;
+
 
   background-color: rgba(256,256,256,0.8);
   border-radius: 10%;
 
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 .info > span {
-  font-size: 22px;
+  font-size: 2vw;
+}
+
+#coolImg{
+  width: 100vw;
+  position: absolute;
+  top: 200px;
+  left: 0;
+
+
 }
 /*****************************************
 Calendar
