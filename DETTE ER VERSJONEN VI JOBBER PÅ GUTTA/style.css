@@ -33,7 +33,7 @@
 
   line-height: 65px;
   font-size: 22pt;
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', Arial, sans-serif, Helvetica;
   text-transform: uppercase;
 
   color: rgba(256, 256, 256, 0.6);
@@ -91,7 +91,11 @@ a:link, a:visited, a:hover, a:active{
 
 .sideBarToggle:hover + .sideBar, .sideBar:hover{
   display: block;
-  animation: animateSideBar 600ms ease-in-out;
+
+    -webkit-animation: animateSideBar 600ms ease-in-out;
+    -moz-animation: animateSideBar 600ms ease-in-out;
+    -o-animation: animateSideBar 600ms ease-in-out;
+    animation: animateSideBar 600ms ease-in-out;
 }
 
 @keyframes animateSideBar {
@@ -110,7 +114,7 @@ a:link, a:visited, a:hover, a:active{
   header & footer
 *****************************************/
 
- footer, .sideBar {
+ footer, header, .sideBar {
   background-color: #252525;
 }
 
@@ -136,7 +140,7 @@ header {
 #headerTitle {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', Arial, sans-serif, Helvetica;
   font-size: 30px;
   margin-top: 5px;
 }
@@ -159,7 +163,7 @@ footer {
   top: 10%;
 }
 #address {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 10pt;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
@@ -169,13 +173,13 @@ footer {
   top:0px;
 }
 #utviklingsteam {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 10pt;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
   margin-left: 10px;
   left: 10px;
-  display: block;
+  display: inline-block;
 }
 
 #map{
@@ -249,12 +253,6 @@ and (max-width: 1145px){
     width: 40%;
     right: 5%;
   }
-  #address{
-    /*top: 220px;*/
-  }
-  #utviklingsteam{
-    /*top: 220px;*/
-  }
 }
 
 
@@ -326,17 +324,16 @@ Text
 /*****************************************/
 
 section > p {
-  /*font-family:'Open Sans';*/
-  font-family: 'Poiret One'
+  font-family: 'Poiret One', Arial, sans-serif, Helvetica;
   color: #222;
   margin: 100px 15% 200px 15%;
 }
 
 .headers {
   font-size: 50px;
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', Arial, sans-serif, Helvetica;
   padding-top: 100px;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 80px;
   text-align: center;
 }
@@ -366,7 +363,7 @@ Projects
 @media only screen
 and (max-width: 1300px){
   #projects{
-    height: 1200px;
+    margin-bottom: 700px;
   }
   .projectWrapper{
     top: 600px;
@@ -474,7 +471,7 @@ slideshow style
 /*****************************************/
 
 .slide {
-  font-family: "Open Sans";
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 40px;
   padding: 40px;
   box-sizing: border-box;
@@ -579,9 +576,8 @@ Contacts
 }
 
 #contact {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  margin-bottom: 300px;
 }
 
 .contactImg {
