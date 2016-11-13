@@ -1,0 +1,243 @@
+
+<!-- Authors: Magnus Einan Mikalsen, Ada Mathea Hoel,
+Halvor Schjelderup og Mats Nordaas Olsen-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>P2 Project Requirements</title>
+  <link rel="stylesheet" type="text/css" href="P2.css" >
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>P2 Project Requirements <span>October 7th, 2016</span></h1>
+    <h2>Halvor Schjelderup, Magnus Einan Mikalsen, Mats Nordaas Olsen and Ada Mathea Hoel</h2>
+  </header>
+  <hr>
+  <section>
+    <h2>Administrative Details</h2>
+    <p> Client name: Ada Mathea Hoel<br>
+        Website name: Lydmurerlosjen<br>
+        Contact person: Ada Mathea Hoel
+    </p>
+  </section>
+
+  <section>
+    <h2>Purpose, goals, and audience</h2>
+    <p>The purpose of this website is to promote the activities of Lydmurerlosjen,
+      promote music technology at NTNU as a whole, and presenting past and present students
+      and their projects. The audience for this website will be people looking for
+      basic information about the union and music technology, with an overview
+      of what the union is up to and activities people can join.</p>
+
+  </section>
+
+  <section>
+    <h2>Navigation Structure</h2>
+
+    <p>The site's navigation structure will be based on a clique structure.
+    One will be able to move from anywhere on the site anywhere else, using the
+    rollover menu that contains the navbar. The site will, however, function
+    inside just one html-file that you also can scroll around in. This is because
+    the site does not contain too much information, comes across more as a whole
+    presentation and "space" for Lydmurerlosjen, and was wanted by the client.</p>
+
+    <img src="img/P2_flowchart.png">
+  </section>
+
+  <section>
+    <h2>Page Layout and Appearance</h2>
+    <img src="img/page_universal.png">
+    <ul>
+      <li>Body width: 900px</li>
+      <li>Fonts: Poiret One for navbar (22pt) and headings(29pt). Open Sans(14pt)
+        for the body and everything else</li>
+
+    <li>Color scheme: Each section will have its own color, so that when you are on the home page it
+      is a shade of green, and then past projects is red. This will also be reflected
+      in the navbar, so when you hover over a specific section in the navbar, it will
+      be the same color as the background of that section. So the colors will be:</li>
+      <ul>
+        <li>Home: #3c948b</li>
+        <li>About: #3c948b</li>
+        <li>Events: #46af69</li>
+        <li>Present Projects: #f7d332</li>
+        <li>Past Projects: #ffe15b</li>
+        <li>Contact: #cc6349</li>
+        <li>Other colors</li>
+        <ul>
+          <li>Navbar/border: #313131</li>
+          <li>Shadows: #cecece</li>
+          <li>Text 1: #313131</li>
+          <li>Text 2: #efefef</li>
+          <li>Backgrounds 1: White</li>
+          <li>Backgrounds 2: #3c948b</li>
+          <li>Banner and footer color: #313131</li>
+          <li>Links: blue</li>
+          <li>Links when hovered: #bc441c</li>
+        </ul>
+      </ul>
+    <li>Banner:
+      We are considering having a very basic banner, that has a menu button that
+      shows the navbar and the Lydmurerlosjen logo.</li>
+    <li>Navbar position:
+      Top left corner menu, moves into view when you hover over it</li>
+    <li>Background image:
+      We will use a background image provided by the client that is shown at the top
+      of the page when you enter, and as you scroll down to the next section of the
+      page, the image is either shaded or tinted so as to change its visibility and
+      tell the user that the focus is now elsewhere.</li>
+
+    <li>Footer:
+        Social media (Facebook, Instagram)</li>
+    </ul>
+
+    <p>
+    </p>
+
+  </section>
+
+  <section>
+    <h2>Content</h2>
+    <p>
+      All the content will be in one single html-document, though
+      each part can be navigated to through a slide-out sidebar.
+    <p>
+    <h4>Home</h4>
+    <p>
+      This section will just contain the logo of Lydmurerlosjen, and serve
+      as a starting point.
+    </p>
+    <h4>About</h4>
+    <img src="img/page_universal.png">
+    <p>
+      This section describes what Lydmurerlosjen's purpose is, and who is
+      part of the board, possibly with pictures of them and a description
+      of what part of the union they are responsible for, and all of their
+      email addresses. There will also be a section describing our funding
+      partners like SiT.
+    </p>
+
+    <h4>Events</h4>
+    <img src="img/page_events.png">
+    <p>
+      This section describes upcoming events that Lydmurerlosjen will be
+      hosting and how you can participate in these events.
+      Here we will feature both a JavaScript Google calendar
+      containing the events Lydmurerlosjen hosts and a list ver-
+      sion of the same calendar. We will also include, if possible, an option
+      for the user to add the calendar to her own Google calendar.
+      The Google calendar will be 800px x 700px
+    </p>
+
+    <h4>Projects</h4>
+    <img src="img/page_projects.png">
+    <p>
+      Here lies a presentation showcasing the work of
+      present and former students, represented with images. When you
+      hover over the images they will highlight and their size
+      will increase within the box. When you click
+      the image it will increase in size and cover most of the screen.
+      Underneath there will be some text and embedding of media
+      examples and/or link to a home page/facebook page.
+      When you click a different icon a new pop-up
+      page replaces the former. <br>When hovering over either the left or right side
+      of the picture, an arrow will appear, indicating to the user that you can
+      change image. We will also make it possible for the user to use the arrows
+      on their keyboard to scroll through projects.
+      <br>Each image, when selected, will have a max width of 600px and height relative
+      to the original picture. It will be positioned to the left of the body,
+      with text and embeds positioned to the right. When
+      viewed as a thumbnail, they will be 150px x 150px.
+    </p>
+
+    <h4>Contact</h4>
+    <img src="img/page_contact.png">
+    <p>
+      This section will have an interactive Google map, a telephone number,
+      email address and any other useful info to get in touch with the union.
+      There will also be an overview of the board members in
+      Lydmurerlosjen with a picture to the left, head liners
+      with their position and some information about their
+      roles and their email adresses.
+      The Google map will be 400px x 300px.
+    </p>
+
+  </section>
+
+  <section>
+    <h2>Minimum Requirements</h2>
+    <p>Ada and Mats will be in charge of these scripts:</p>
+    <ol>
+      <li>A rollover menu/navbar that lets the user decide which section
+        scroll down to.
+      </li>
+      <li>A gallery that displays the different projects that have been and
+      are being worked on at music technology.</li>
+    </ol>
+    <p> Magnus and Halvor will be in charge of these scripts:</p>
+    <ol>
+      <li>An implementation of Google Maps that shows the location of
+      Music technology's campus and Lydmurerlosjen.</li>
+      <li>The use of dynamic change of colors from section to section, so that
+      it transitions from one color to the next.</li>
+    </ol>
+    <p>We are also considering adding a Google calendar in the Events-section.
+    </p>
+  </section>
+
+  <section>
+    <h2>Plan</h2>
+
+    <h4 class="Subheader">Organizational scheme</h4>
+    <p>These images and files will be added inside a folder.</p>
+    <ul>
+      <li>webpage.html</li>
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Events</li>
+        <li>Present Projects</li>
+        <li>Past Project</li>
+        <li>Contact</li>
+        <li>Footer</li>
+        </ul>
+      <li>styling.css</li>
+      <li>modularity/</li>
+        <ul>
+        <li>menu.part</li>
+        </ul>
+      <li>scripts/</li>
+      <ul>
+        <li>rollOverMenu.js</li>
+        <li>googleMaps.js</li>
+        <li>googleCalendar.js</li>
+        <li>dynamicBackgroundColors.js </li>
+        <li>gallery.js</li>
+      </ul>
+      <li>images/</li>
+        <ul>
+          <li>backgroundImage_home.png</li>
+          <li>backgroundImage_about.png</li>
+          <li>backgroundImage_events.png</li>
+          <li>backgroundImage_present.png</li>
+          <li>backgroundImage_past.png</li>
+          <li>backgroundImage_contact.png</li>
+          <li>studentUnionMember_1.png</li>
+          <li>...</li>
+          <li>studentUnionMember_8.png</li>
+          <li>social_logo_1.png</li>
+          <li>social_logo_2.png</li>
+          <li>projectImage_1.png</li>
+          <li>....</li>
+          <li>projectImage_x.png</li>
+        </ul>
+    </ul>
+
+  <img src="img/P2 WorkDivision_0910.pdf" id="table">
+  </section>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!--
+FILE NAME: main.html
+WRITTEN BY: Magnus Mikalsen, Halvor Schjelderup, Ada Mathea Hoel and Mats
+Nordaas Olsen
+WHEN: November 2016
+PURPOSE: The main website-->
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <meta charset="utf-8">
+    <title>LYDMURERLOSJEN</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel='shortcut icon' href='img/LML2.png' type='image/x-icon' width='32px' height='32px'/> <!--Favicon. Skal egentlig være .ico-fil -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script type="text/javascript" src="js/googleMaps.js"></script>
+  </head>
+
+  <body id="body" onscroll="changeHeader()" onload="changeHeader()" onresize="updatePosition()">
+    <!-- SIDEBAR AND HEADER -->
+    <header id="headerBar">
+      <div class="sideBarToggle" id="sideBarButton">≣</div>
+      <nav class="sideBar">
+        <ul>
+          <li id="homeSB">Hjem</li>
+          <li id="aboutSB">Om</li>
+          <li id="eventsSB">Hendelser</li>
+          <li id="projectsSB">Prosjekter</li>
+          <li id="contactSB">Kontakt</li>
+        </ul>
+      </nav>
+      <div id="headerTitle">LYDMURERLOSJEN</div>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+      <div id="background">
+        <div id="filter"></div>
+        <img id="homePhoto" src="img/PB-LOGO.png" alt="img/png">
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div id = "aboutHeader" class="headers">OM</div>
+      <p>
+        Lydmurerlosjen er linjeforeningen til musikkteknologistudiet ved NTNU.
+        Vår visjon er å skape en helhetlig sosial ramme for musikkteknologistudenter
+        ved å arrangere spennende og relevante eventer av høy kvalitet som ikke
+        koster skjorta for studentene. <br> <br>
+
+        Linjeforeningen har et tett samarbeid med ledelsen og forelesere på musikkteknologi.
+        Dette forholdet setter Lydmurerlosjen i en viktig posisjon der vi har innflytelse
+        på studiehverdagen og studieforløpet. Derfor oppfordrer vi alle studenter ved
+        musikkteknologi til å både melde seg inn og å delta på våre arrangementer. <br> <br>
+
+        Medlemskap i Lydmurerlosjen koster 100 kr og varer livet ut. Alle medlemmer
+        må ha tilknytning til musikkteknologi ved NTNU. Et medlemskap i Losjen
+        gir deg gratis eller rabattert inngang til alle våre arrangementer i tillegg
+        til tilgang til de lukkede arrangementene vi har kun for våre medlemmer.
+        Alle midler linjeforeningen mottar går til sosialt fremmende arbeid for
+        studentene og tilbake til medlemmene. Vårt ønske er at våre medlemmer skal
+        slippe å betale for linjeforeningens arrangementer så langt det lar seg gjøre.
+        For å bli medlem kan du overføre 100 kr til kontonummer 1503.68.49980 (husk
+        å oppgi navn).
+      </p>
+
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+      <div id="eventsHeader" class="headers">HENDELSER</div>
+      <p>
+        Her finner du informasjon om våre tidligere-, fremtidige- og faste arrangementer.
+      </p>
+      <div class="calendarWrapper">
+        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5vtt1ot0eq1vpn0vcoon3d6838%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=Europe%2FOslo" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="headers">PROSJEKTER</div>
+
+        <p>
+          På musikkteknologistudiene foregår det mye fagrelevant aktivitet. Her
+          finner du et utvalg av pågående og fullførte prosjekter utført av
+          nåværende og tidligere studenter ved musikkteknologi.
+        </p>
+
+      <!-- SLIDE CONTAINER -->
+      <div class="container">
+        <ul id="slides">
+          <!-- SLIDE 1 -->
+          <li class="slide showing">
+
+            <img class="slideImg" id="BendikBilde" src="img/projects/Bendik.png" alt="img/jpg" />
+            <div class="projectWrapper">
+              <p class="projectInfo">
+                <span class="navn">Bendik</span><br>
+                Bendik utviklet seg mens Silje Halstensen var musikkteknologi-
+                student ved NTNU i Trondheim, og prosjektet fikk for alvor
+                oppmerksomhet etter å vært en av finalistene i Urørtfinalen på
+                NRK P3 i 2011.
+                Året etter kåret NRK P3 debutalbumet «Drømmen Gjør Meg Ingenting»
+                til et av årets beste norske plater.
+                I 2012 ble hun også nominert av P3 Gull for beste liveband. I
+                2014 slapp hun albumet «No Går Det Over» som ble Spellemanns-nominert
+                i kategorien «Indie» samme år.
+                «Fortid» er tittelen på tredjealbumet til Bendik, som ble sluppet
+                26. februar 2016.<br> <br>
+
+              </p>
+              <iframe class="spotifyPlayer" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3tEcQYug3I2ggHevIRBl2O"></iframe>
+            </div>
+
+          </li>
+
+          <!-- SLIDE 2 -->
+          <li class="slide">
+            <img class="slideImg" id="matomaBilde" src="img/projects/Matoma.png" alt="img/jpg" />
+            <div class="projectWrapper">
+              <p class="projectInfo">
+                <span class="navn" >Matoma</span><br>
+                Tom Stræte Lagergren er en norsk musikkprodusent innen sjangeren
+                tropisk house. Han har bachelor i musikkteknologi fra NTNU og
+                fikk gjennomslag i 2014 etter 5 år med musikk 10-12 timer daglig.<br>
+                Matoma har 330 millioner avspillinger på Spotify (mai 2016).<br>
+                Han opptrådte på Coachella-festivalen 16. april 2016 og på
+                på Tomorrowland 24. juli 2016.<br>
+              </p>
+              <iframe class="spotifyPlayer" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A7gZQfdEQpmwAoPHSbEHzms"></iframe>
+            </div>
+          </li>
+        <!-- SLIDE 3 -->
+        <li class="slide">
+          <img class="slideImg"src="img/projects/ErlendElvesveen.png" alt="img/jpg" />
+          <div class="projectWrapper">
+            <p class="projectInfo">
+              <span class="navn">Erlend Elvesveen</span><br>
+              Erlend begynte som selvlært pianist som 20-åring etter et voldsomt
+               ønske om å spille Grieg- og Tiersen-notene han fikk av en venn,
+               og siden har han viet livet sitt til musikk.<br>
+               Med en mastergrad i musikkproduksjon ved NTNU i 2013 og hundrevis
+               av musikkprosjekter av ulike slag bak seg har han slått meg ned
+               som selvstendig næringsdrivende i Øra Studio.
+            </p>
+            <iframe class="spotifyPlayer" src="https://embed.spotify.com/?uri=spotify%3Atrack%3A6tAxAxhWygVGYPcWSyoTLB"allowtransparency="true"></iframe>
+          </div>
+        </li>
+        <!-- SLIDE 4 -->
+        <li class="slide">
+          <img class="slideImg" id="HenrikBilde" src="img/projects/HenrikTheArtist.png" alt="img/jpg" />
+          <div class="projectWrapper">
+            <p class="projectInfo">
+              <span class="navn">Henrik The Artist</span><br>
+              Henrik Haraldsen Sveen fullførte bachelorgraden sin på
+              musikkteknologi i 2014 og har siden det gitt ut flere
+              låter både som soloartist og som en del av musikkollektivet
+              Rytmeklubben, som også springer ut av musikkteknologimiljøet.<br>
+              Henrik The Artist har for tiden samme management som Cashmere Cat,
+              Bearson, Hasta og Lindstrøm, og er en av flinkisene som ble valgt
+              ut av 300 nordmenn til å delta på Masterclass med Stargate i
+              Los Angeles og Electric og Fred Ball i London. <br>
+            </p>
+            <iframe class="mediaPlayer" scrolling="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/212051497&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          </div>
+        </li>
+        <!-- SLIDE 5 -->
+        <li class="slide">
+          <img class="slideImg" src="img/projects/Maurice.png" alt="img/png" />
+          <div class="projectWrapper">
+            <p class="projectInfo">
+              <span class="navn">Máurice</span><br>
+              Máurice fullførte sin bachelorgrad i musikkteknologi i 2016, og
+              har turnert over hele Norge og spilt på flere locationer og
+              og klubber. Han begynte som DJ da han var 16 under
+              aliaset Axel Morris. Máurice er mest inspirert av House-musikk,
+              men har en lidenskap for flere sjangere, som man kan høre på
+              DJ-settene hans.<br>
+              Máurice har turnert over hele Norge og spilt på flere locationer og
+              og klubber og i 2015 ble Hans første gjeste-mix spilt av live på
+              radio på «Pils & Plater» <br>
+            </p>
+            <iframe class="mediaPlayer" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251506476&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          </div>
+        </li>
+      </ul>
+      <!-- NAVIGATION DOTS IN SLIDESHOW -->
+      <div id="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+      </div>
+      <div class="buttons">
+
+        <button class="controls" id="previous">⦉</button>
+        <button class="controls" id="next">⦊</button>
+
+      </div>
+    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="headers">KONTAKT</div>
+      <img id="coolImg" src="img/Bakgrunn_eksamensoppg.JPG" alt="img/jpg" />
+      <div id="contactPeople">
+        <div class="person">
+          <img  class="contactImg activeContact"
+                onclick="goToContactSlide(0)"
+                src="img/contact_people/Erle2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(1)"
+                src="img/contact_people/Eigil2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(2)"
+                src="img/contact_people/Sturla2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(3)"
+                src="img/contact_people/Ada2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(4)"
+                src="img/contact_people/Sondre2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(5)"
+                src="img/contact_people/Lars2.png" alt="img/jpg" />
+        </div>
+
+        <div class="person">
+          <img  class="contactImg"
+                onclick="goToContactSlide(6)"
+                src="img/contact_people/Audun2.png" alt="img/jpg" />
+        </div>
+      </div>
+
+      <div class="contactContainer">
+
+        <ul id="contactSlides">
+          <!-- SLIDE 1 -->
+          <li class="contactSlide contactShowing">
+            <img src="img/contact_people/Erle2.png" alt="img/jpg" />
+            <div class="contactWrapper">
+            <p class="info">
+              Leder <br>
+              <span id="styrenavn">Erle Romundstad Mylius</span> <br>
+              <p class="contactInfo">Leder har ansvar for å innkalle til styremøter, organisere
+                og sørge for å gjennomføre målene som blir satt. Lederen må ha
+                god oversikt over alle vervene i styret og bistå der det trengs.<br>
+              </p>
+              <a id="styremail" href="mailto:styreleder@lydmurerlosjen.no" type="mail">styreleder@lydmurerlosjen.no</a>
+            </p>
+            </div>
+          </li>
+          <!-- SLIDE 2 -->
+          <li class="contactSlide">
+            <img src="img/contact_people/Eigil2.png" alt="img/png" />
+            <div class="contactWrapper">
+            <p class="info">
+              Nestleder <br>
+              <span id="styrenavn">Eigil Aandahl</span> <br>
+              <p class="contactInfo">Nestleder assisterer leder og tar over i leders fravær.
+                Holder styr på aktive oppgaver og bidrar ellers med planlegging
+                og gjennomføring av arrangementer. <br>
+              </p>
+              <a id="styremail" href="mailto:nestleder@lydmurerlosjen.no" type="mail" >nestleder@lydmurerlosjen.no</a>
+            </p>
+          </div>
+          </li>
+          <!-- SLIDE 3 -->
+          <li class="contactSlide">
+            <img src="img/contact_people/Sturla2.png" alt="img/png" />
+          <div class="contactWrapper">
+          <p class="info">
+            Økonomiansvarlig <br>
+            <span id="styrenavn">Sturla Myklebost</span> <br>
+            <p class="contactInfo">Økonomiansvarlig har ansvar for linjeforeningens økonomi.
+              Skriver søknader og setter opp budsjetter til fakultetet, SIT og
+              andre organisasjoner slik at det blir mulig å gjennomføre Lydmurerlosjens
+              arrangementer. <br>
+            </p>
+            <a id="styremail" href="mailto:okonomi@lydmurerlosjen.no" type="mail" >okonomi@lydmurerlosjen.no</a>
+          </p>
+          </li>
+          <!-- SLIDE 4 -->
+          <li class="contactSlide">
+            <img src="img/contact_people/Ada2.png" alt="img/png" />
+            <div class="contactWrapper">
+            <p class="info">
+              PR-­ansvarlig <br>
+              <span id="styrenavn">Ada Mathea Hoel</span> <br>
+              <p class ="contactInfo"> PR-ansvarlig tar seg av formidling av informasjon til
+                medlemmer om arrangementer og lignende, og promoterer linjeforeningen
+                og dens medlemmer utad. Styrer hjemmesider og sosiale medier.<br>
+            </p>
+            <a id="styremail" href="mailto:pr@lydmurerlosjen.no" type:"mail" >pr@lydmurerlosjen.no</a>
+            </p>
+          </li>
+          <!-- SLIDE 5 -->
+          <li class="contactSlide">
+            <img src="img/contact_people/Sondre2.png" alt="img/png" />
+            <div class="contactWrapper">
+            <p class="info">
+              Eventansvarlig <br>
+              <span id="styrenavn">Sondre Christoffersen</span> <br>
+              <p class="contactInfo">Arrangementsansvarlig har ansvar for å planlegge og arrangere
+                sosiale begivenheter for linjeforeningen i samarbeid med styret,
+                egne komitéer eller andre samarbeidspartnere <br>
+              </p>
+              <a id="styremail" href="mailto:event@lydmurerlosjen.no" type="mail">event@lydmurerlosjen.no</a>
+            </p>
+          </div>
+          </li>
+          <!-- SLIDE 6 -->
+          <li class="contactSlide">
+            <img src="img/contact_people/Lars2.png" alt="img/png" />
+            <div class="contactWrapper">
+            <p class="info">
+              Workshopansvarlig <br>
+              <span id="styrenavn">Lars Horn Lavik</span> <br>
+              <p class="contactInfo">Workshopansvarlig setter i stand ulike kurs og arrangement
+                etter studentenes egne ønsker.<br>
+            </p>
+            <a id="styremail" href="mailto:workshop@lydmurerlosjen.no" type="email" >workshop@lydmurerlosjen.no</a>
+            </p>
+          </div>
+          </li>
+          <!-- SLIDE 7 -->
+          <li class="contactSlide">
+            <img src="img/contact_people/Audun2.png" alt="img/png" />
+            <div class="contactWrapper">
+            <p class="info">
+              Faddersjef <br>
+              <span id="styrenavn">Audun Agnar Guldbrandsen</span> <br>
+              <p class="contactInfo">Faddersjef er ansvarlig for fadderuka, opptak og rekruttering,
+                og har et fokus på det sosiale miljøet i linjeforeninga.<br>
+            </p>
+          <a id="styremail" href="mailto:faddersjef@lydmurerlosjen.no" type="email">faddersjef@lydmurerlosjen.no</a>
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id="footer">
+    <div class="textWrapper">
+      <div id="address">
+        <p class="footerText">
+          <div class="footerTitle">Adresse</div>
+          Fjordgata 1,<br>
+          3. etasje<br>
+          7010 Trondheim<br>
+        </p>
+      </div>
+      <div id="utviklingsteam">
+        <p class="footerTitle">Utviklingsteam</p>
+        <p class="footerText">
+
+          Ada Mathea Hoel<br>
+          Halvor Schjelderup<br>
+          Mats Nordaas Olsen<br>
+          Magnus Mikalsen<br>
+        </p>
+      </div>
+    </div>
+      <!-- SOCIAL MEDIA BUTTONS -->
+      <div id="socialMedia">
+        <a id="Facebook" href="https://www.facebook.com/lydmurerlosjen/" target="_blank"><img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" class="socialMedia"/></a>
+        <!-- <iframe src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fadahoel&color=orange_white&size=64" style="width: 64px; height: 64px;" id="SC"></iframe> -->
+        <a href="https://www.instagram.com/mustekntnu/" target="_blank"><img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" class="socialMedia"/></a>
+        <a id="Mail" href="mailto:kontakt@lydmurerlosjen.no" type="email" target="_blank"><img title="Mail" alt="Mail" src="https://seeklogo.com/images/M/mail-icon-logo-28FE0635D0-seeklogo.com.gif" class="socialMedia"/></a>
+        <!-- <a id="Soundcloud" href="https://www.soundcloud.com/"><img id="SCimage" title="Soundcloud" alt="RSS" src="img/Soundcloud.ico" class="socialMedia"/></a> -->
+
+      </div>
+      <div id="map"></div>
+      <script>
+      myMap()
+      </script>
+
+    </footer>
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/contactSlides.js"></script>
+  </body>
+</html>

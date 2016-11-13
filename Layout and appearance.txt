@@ -1,0 +1,42 @@
+ Body width: 80%
+Fonts:
+  - Poiret One for navbar and headings
+  - Open Sans for paragraphs and everything else
+
+Color scheme:
+Each section will have its own color, so that when you are on the home page it
+is a shade of green, and then past projects is red. This will also be reflected
+in the navbar, so when you hover over a specific section in the navbar, it will
+be the same color as the background on that section. So the colors will be
+  - Home: #3c948b
+  - About: #3c948b
+  - Events: #46af69
+  - Present Projects: #f7d332
+  - Past Projects: #ffe15b
+  - Contact: #cc6349
+
+  - Navbar/border: #313131
+  - Shadows: #cecece
+  - Text 1: #313131
+  - Text 2: #efefef
+  - Backgrounds 1: White
+  - Backgrounds 2: #3c948b
+  - Footer color: #313131
+  - Links: blue
+  - Links when hovered: #bc441c
+Banner:
+  - We are considering having a very basic banner, that has a menu button that
+  shows the navbar and the Lydmurerlosjen logo. Either this banner will be in white
+  with no border, or the border will be very thin with a shadow that is created
+  when you browse down the page.
+Navbar position:
+  - Top left corner menu, moves into view when you hover over it
+Background image:
+  - We will use a background image provided by the client that is shown at the top
+  of the page when you enter, and as you scroll down to the next section of the
+  page, the image is either shaded or tinted so as to change its visibility and
+  tell the user that the focus is now elsewhere.
+
+Footer:
+  - Google Map
+  - Social media (Facebook, Instagram)

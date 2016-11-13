@@ -1,0 +1,95 @@
+/*Authors: Magnus Einan Mikalsen, Ada Mathea Hoel,
+Halvor Schjelderup og Mats Nordaas Olsen*/
+
+html{
+  background-color: #fff7e6;
+}
+
+header {
+  height: 100px;
+  padding-top: 10px;
+  margin: 40px 90px 40px 90px;
+  border-width: 1px;
+}
+
+header h2{
+  font-size: 12px;
+}
+
+h1 span {
+  font-size: 12px;
+  font-style: italic;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+
+  position: absolute;
+  right: -190px;
+  top: 0px;
+
+  /* for fun */
+  box-shadow: 5px 5px 5px #888888;
+  transition: transform 2s, border-radius 2s;
+}
+
+img:hover{  /* for fun */
+  transform: scale(1.4);
+  border-radius: 0;
+}
+
+body {
+  width: 780px;
+  position: relative;
+
+  margin: 30px auto 30px;
+  padding-bottom: 30px;
+
+  border-radius: 20px;
+  background-color: #FFFAF0;
+  border: 0.5px solid #cccccc;
+  font-family: 'Playfair Display', Georgia, Times, serif;
+}
+
+section {
+ padding-left: 50px;
+ padding-right: 50px;
+ margin: 0 40px 60px 40px;
+ }
+
+ h1, h2 {
+   font-family: 'Raleway', Helvetica, Arial, sans-serif;
+   font-weight: thick;
+   position: relative;
+ }
+
+section > h2 {
+   font-size: 19px;
+ }
+
+h2 {
+  font-size: 13px;
+  padding-bottom: 3px;
+  border-bottom: 0.5px solid #bbbbbb;
+}
+
+h3{
+    font-style: black;
+    font-weight: bold;
+    display: block;
+    margin-bottom: -10px;
+    font-size: 16px;
+}
+
+#client {
+  width: 50%;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+}
