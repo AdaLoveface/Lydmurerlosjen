@@ -366,13 +366,13 @@ Projects
   left: 700px;
 }
 .navn{
-  font-size: 20pt
+  font-size: 1.5vw;
 }
 .projectInfo {
   position: relative;
   /*left: 600px;*/
   padding-top: 10px;
-  font-size: 14pt;
+  font-size: 1.3vw;
 }
 .mediaPlayer{
   position: relative;
@@ -720,13 +720,10 @@ ContactSlide style
   padding: 10px;
   padding-bottom: 25px;
 
-<<<<<<< Updated upstream
   background-color: rgba(255,255,255,0.8);
   border-radius: 10%;
-=======
-  background-color: rgba(256,256,256,0.8);
+
   border-radius: 15px;
->>>>>>> Stashed changes
 
   font-size: 3vw;
 }
