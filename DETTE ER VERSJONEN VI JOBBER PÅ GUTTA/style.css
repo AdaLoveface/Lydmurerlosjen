@@ -351,8 +351,9 @@ section > p {
 /*****************************************
 Projects
 /*****************************************/
-#projects{
-  background-color: #252525;
+}
+#projectsHeader{
+  margin-bottom: 0px;
 }
 .projectWrapper{
   position: absolute;
@@ -572,7 +573,24 @@ About
 #aboutHeader{
   margin-top: 0px;
 }
+#about{
+  height: 110vh;
+}
 
+/*****************************************
+Events
+/*****************************************/
+#eventsHeader{
+  margin-top: 0px;
+  filter: invert(100%);
+}
+#events{
+  background-color: #252525;
+  height: 120vh;
+}
+#events > p{
+  filter: invert(100%);
+}
 /*****************************************
 Contacts
 /*****************************************/
@@ -599,6 +617,7 @@ Contacts
 #contact {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 20px;
+  height: 1100px;
 }
 
 .contactImg {
@@ -619,7 +638,7 @@ Contacts
   margin-left: 7vw;
 }
 
-
+.contactContainer >
 /*****************************************
 contactSlideshow
 /*****************************************/
@@ -684,11 +703,12 @@ ContactSlide style
   filter:grayscale(0);
 }
 
-.info {
+.contactWrapper {
   position: absolute;
   display: inline-block;
   left: 20vw;
   padding: 10px;
+  /*line-height: 90%;*/
 
 
   background-color: rgba(256,256,256,0.8);
@@ -700,6 +720,7 @@ ContactSlide style
 .contactInfo{
   font-size: 1.7vw;
 }
+
 #coolImg{
   width: 100vw;
   position: absolute;
