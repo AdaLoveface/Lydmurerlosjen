@@ -1,4 +1,9 @@
-
+/*
+FILE NAME: script.js
+WRITTEN BY: Magnus Mikalsen, Halvor Schjelderup, Ada Mathea Hoel and Mats
+Nordaas Olsen
+WHEN: November 2016
+PURPOSE: General javascript functions*/
 // object
 var sections = [
   {
