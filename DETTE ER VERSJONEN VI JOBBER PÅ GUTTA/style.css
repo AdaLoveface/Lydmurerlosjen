@@ -54,8 +54,8 @@ a:link, a:visited, a:hover, a:active{
 a:link{
   color: #cc6349;
 }
-/* Highlights background when mouse hover */
 
+/* Highlights background when mouse hover */
 .sideBar > ul > #homeSB:hover,
 .sideBar > ul > #aboutSB:hover,
 .sideBar > ul > #eventsSB:hover,
@@ -137,18 +137,17 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-
-  /*box-shadow: 0px 1px 3px #888;*/
   z-index: 10;
 }
 
-/*Transition for colorchange*/
+/*Transition for header colorchange*/
 #headerBar {
   -webkit-transition: all 600ms ease-in-out;
   -moz-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
 }
+/*------------------*/
 
 #headerTitle {
   color: rgba(255, 255, 255, 0.8);
@@ -167,6 +166,7 @@ footer {
 .footerTitle{
   color: rgba(255, 255, 255, 0.3);
 }
+
 .textWrapper{
   position: absolute;
   margin-left: 30%;
@@ -175,6 +175,9 @@ footer {
   right: 7%;
   top: 10%;
 }
+
+
+/*Footer text blocks*/
 #address {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 10pt;
@@ -185,6 +188,7 @@ footer {
   margin-left: 36%;
   top:0px;
 }
+
 #utviklingsteam {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 10pt;
@@ -194,20 +198,21 @@ footer {
   left: 10px;
   display: inline-block;
 }
-
+/*------------------*/
 #map{
   width:400px;
   max-width: 40%;
   height:300px;
 
   position: absolute;
-  /*left: 5%;*/
   right: 5%;
   top: 25px;
   bottom: 70px;
 
   box-shadow: 5px 5px 5px #222;
 }
+
+/*Social media buttons in footer*/
 #socialMedia{
   position: absolute;
   top:14%;
@@ -235,17 +240,8 @@ footer {
   padding-left: 10px;*/
 }
 
-#SCimage {
-  border-radius: 50%;
-  /*display: inline;*/
-  /*margin: 0 auto;
-  height: 100%;
-  width: auto;
-  overflow: hidden;*/
 
-
-}
-
+/*If screen smaller than 1145px*/
 @media only screen
 and (max-width: 1145px){
   #map{
@@ -275,10 +271,8 @@ and (max-width: 1145px){
   }
 }
 
-
-
 /*****************************************
-Misc
+Miscellaneous
 /*****************************************/
 
 body {
@@ -291,9 +285,6 @@ html {
   overflow-x: hidden;
 }
 
-#contact {
-  position: relative;
-}
 a{
   color: blue;
 }
@@ -304,7 +295,7 @@ p{
 }
 
 /*****************************************
-Background
+  Start screen background image
 /*****************************************/
 
 #background{
@@ -348,9 +339,11 @@ and (min-width: 1400px) {
     height: 790px;
   }
 }
+
 /*****************************************
 Text
 /*****************************************/
+
 
 section > p {
   font-family: 'Open Sans', Arial, sans-serif, Helvetica;
@@ -367,6 +360,7 @@ section > p {
   margin-bottom: 80px;
   text-align: center;
 }
+
 /*****************************************
 Projects
 /*****************************************/
@@ -374,9 +368,12 @@ Projects
   margin-bottom: 0px;
 }
 
+/*Title of artist in slideshow*/
 .navn{
   font-size: 4vw;
 }
+
+/*Rest of text in slideshow*/
 .projectInfo {
   position: absolute;;
   left:45vw;
@@ -385,25 +382,28 @@ Projects
   width: 50%;
 }
 
+/*Soundcloud player */
 .mediaPlayer{
   position: absolute;
   left:45vw;
-  top: 60%;
+  bottom: 20px;
 
   width: 400px;
   height: 150px;
 }
 
+/* spotify player*/
 .spotifyPlayer{
   position: absolute;;
   left:45vw;
-  top: 65%;
+  bottom: 50px;
 
   width: 400px;
   height: 80px;
 }
 
 
+/*Slideshow*/
 #slides {
   position: relative;
   height: 500px;
@@ -412,6 +412,7 @@ Projects
   list-style-type: none;
 }
 
+/*Slide*/
 .slide {
   position: absolute;
   left: 0px;
@@ -427,10 +428,13 @@ Projects
   transition: opacity 1s;
 }
 
+/*current slide */
 .showing {
     opacity: 1;
     z-index: 2;
 }
+
+/* setting animation for slide-change */
 
 .slideOutRight{
   animation: slideOutRight 800ms ease-out;
@@ -503,6 +507,7 @@ Projects
 slideshow style
 /*****************************************/
 
+
 .slide {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 40px;
@@ -514,10 +519,12 @@ slideshow style
   color: rgba(0,0,0,0.7);
 }
 
+
 .slideImg {
-  max-height: 400px;
+  height: 400px;
 }
 
+/*Placing the smaller slide-images*/
 #BendikBilde, #HenrikBilde{
   position:absolute;
   left: 10vw;
@@ -525,9 +532,9 @@ slideshow style
 
 .container {
   position:relative;
-
 }
 
+/*Buttons for slideshow*/
 .controls{
   border: none;
   outline: none;
@@ -539,9 +546,9 @@ slideshow style
   color: rgba(255,255,255,0.4);
   background-color: rgba(0,0,0,0.6);
   transition: all .2s ease-in-out;
-
 }
 
+/*positioning slide show buttons*/
 #next{
   position: absolute;
   right: 0px;
@@ -552,6 +559,7 @@ slideshow style
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
 }
+
 #previous {
   position: absolute;
   top: 40%;
@@ -562,6 +570,7 @@ slideshow style
   border-bottom-right-radius: 80px;
 }
 
+/*Making the buttons more "alive"*/
 .controls:hover {
   transform: scale(1.3);
   color: rgba(255,255,255,0.7);
@@ -629,6 +638,7 @@ Contacts
   cursor: pointer;
 }
 
+/*Shaking contacts, for fun*/
 @keyframes shake {
   0%{  transform: rotate(0);}
   20%{ transform: rotate(4deg);}
@@ -658,6 +668,10 @@ Contacts
   display: inline-block;
 }
 
+#contact {
+  position: relative;
+}
+
 #contactPeople{
   margin-left: 7vw;
 }
@@ -669,12 +683,10 @@ Contacts
   font-size: 2vw;
 }
 
-.contactContainer >
 /*****************************************
 contactSlideshow
 /*****************************************/
 
-.contactContainer{}
 
 #contactSlides {
   position: relative;
@@ -759,7 +771,7 @@ ContactSlide style
 }
 
 /*****************************************
-Calendar
+ Google Calendar
 /*****************************************/
 
 #calendar{
@@ -767,6 +779,7 @@ Calendar
   margin-top: -30px;
 }
 
+/*Styling the calendar didnt work so I hid it in a wrapper*/
 .calendarWrapper{
 
   max-width: 787px;

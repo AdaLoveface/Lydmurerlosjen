@@ -1,8 +1,4 @@
-/********************************************************
-https://www.sitepoint.com/make-a-simple-javascript-slideshow-without-jquery/
-Used for foundation/inspiration for the slideshow, but the implementation of
-the arrow keys was created by Ada from the team. 
-*********************************************************/
+
 var slides = document.querySelectorAll('#slides .slide');
 var prevSlide = 0;
 var currentSlide = 0;
@@ -24,7 +20,8 @@ function goToSlide(n) {
   dots = document.getElementsByClassName('dot');
 
 
-  currentSlide = n%slides.length;
+  currentSlide = (n+slides.length)%slides.length;
+
   if (n>prevSlide) {
     // if on last slide
     slides[prevSlide].className = 'slide slideOutLeft';
@@ -46,14 +43,7 @@ function goToSlide(n) {
 var next = document.getElementById('next');
 var previous = document.getElementById('previous');
 
-next.onclick = function() {
-  nextSlide();
-};
-previous.onclick = function() {
-  previousSlide();
-};
-
-//MADE BY THE TEAM
+//Next and previous with arrows
 document.addEventListener("keyup", function (event){
   var key = event.which || event.keyCode;
   if (key === 39){
@@ -66,3 +56,10 @@ document.addEventListener("keyup", function (event){
   }
 
 });
+
+next.onclick = function() {
+  nextSlide();
+};
+previous.onclick = function() {
+  previousSlide();
+};

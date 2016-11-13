@@ -2,6 +2,7 @@
 https://www.sitepoint.com/make-a-simple-javascript-slideshow-without-jquery/
 sed for foundation/inspiration for the slideshow, with modification from us
 *********************************************************/
+
 var contactSlides = document.querySelectorAll('#contactSlides .contactSlide');
 var contactImg = document.getElementsByClassName('contactImg');
 var prevContact = 0;
