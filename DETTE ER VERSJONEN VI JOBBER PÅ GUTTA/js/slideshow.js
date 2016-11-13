@@ -45,14 +45,17 @@ var next = document.getElementById('next');
 var previous = document.getElementById('previous');
 
 //Next and previous with arrows
-document.addEventListener("keydown", function (event){
+document.addEventListener("keyup", function (event){
   var key = event.which || event.keyCode;
   if (key === 39){
     nextSlide();
+    return;
   }
   else if (key === 37){
     previousSlide();
+    return;
   }
+
 });
 
 next.onclick = function() {
