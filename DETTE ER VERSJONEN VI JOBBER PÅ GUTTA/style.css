@@ -324,7 +324,7 @@ Text
 /*****************************************/
 
 section > p {
-  font-family: 'Poiret One', Arial, sans-serif, Helvetica;
+  font-family: 'Open Sans', Arial, sans-serif, Helvetica;
   color: #222;
   margin: 100px 15% 200px 15%;
 }
@@ -361,7 +361,7 @@ Projects
   height: 150px;
 }
 @media only screen
-and (max-width: 1300px){
+and (max-width: 1200px){
   #projects{
     margin-bottom: 700px;
   }
