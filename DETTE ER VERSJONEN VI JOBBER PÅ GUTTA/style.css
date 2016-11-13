@@ -375,6 +375,11 @@ Projects
   width: 400px;
   height: 150px;
 }
+.spotifyPlayer{
+  position: relative;
+  width: 400px;
+  height: 80px;
+}
 @media only screen
 and (max-width: 1200px){
   #projects{
