@@ -205,7 +205,7 @@ footer {
 #socialMedia{
   position: absolute;
   top:14%;
-  left: 12%;
+  left: 9%;
 }
 .socialMedia {
   width: 64px;
@@ -502,7 +502,9 @@ slideshow style
   font-size: 40px;
   padding: 40px;
   box-sizing: border-box;
-  background: #fff;
+  background: #eee;
+
+  margin-top: 2vw;
   color: rgba(0,0,0,0.7);
 }
 
@@ -564,8 +566,8 @@ slideshow style
 slideshow dots
 /*****************************************/
 #dots {
-  position: absolute;
-  left: 45vw;
+  margin-left: 45vw;
+  margin-top: 4vw;
 }
 
 .dot {
@@ -588,9 +590,10 @@ About
   margin-top: 0px;
 }
 #about{
-  height: 800px;
-}
+  height: 1000px;
+  margin-bottom: 100px;
 
+}
 /*****************************************
 Events
 /*****************************************/
@@ -729,7 +732,7 @@ ContactSlide style
   position: absolute;
   display: inline-block;
   left: 20vw;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 25px;
 
   background-color: rgba(255,255,255,0.8);
