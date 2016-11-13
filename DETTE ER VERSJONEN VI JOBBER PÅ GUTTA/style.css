@@ -358,7 +358,7 @@ Projects
   position: absolute;
   right: 170px;
   top: 0px;
-  left: 700px;
+  left: 500px;
 }
 .navn{
   font-size: 20pt
@@ -501,6 +501,16 @@ slideshow style
 
 .slideImg {
   height: 400px;
+}
+
+#BendikBilde{
+  position:absolute;
+  left: 100px;
+}
+
+#HenrikBilde{
+  position:absolute;
+  left: 100px;
 }
 
 .container {
